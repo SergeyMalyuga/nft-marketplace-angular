@@ -1,5 +1,19 @@
 // ==== COLOR ==== //
 
+/* base */
+$white: rgb(255, 255, 255);
+
+/* gray */
+$gray-400: rgba(59, 59, 59);
+$gray-500: rgb(43, 43, 43);
+
+/* background */
+$bg-main: $gray-500;
+$bg-accent: $gray-400;
+
+/* text */
+$text-main: $white;
+
 // ==== TYPOGRAPHY ==== //
 $font-family-primary: 'Work Sans', sans-serif;
 $font-family-secondary: 'Space Mono', monospace;
