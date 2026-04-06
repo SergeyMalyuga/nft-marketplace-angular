@@ -1,1 +1,44 @@
 @use '../../../styles/variables' as variables;
+
+.header {
+  padding: 20px 0;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__list {
+    &-nav {
+      display: flex;
+      gap: 10px;
+      height: 100%;
+      align-items: center;
+    }
+  }
+
+  &__link {
+    display: block;
+    text-decoration: none;
+    color: variables.$link-main;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 140%;
+    text-align: center;
+
+    &--logo {
+      display: block;
+
+      img {
+        display: block;
+        max-width: 243px;
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    &--nav {
+      padding: 0 20px;
+    }
+  }
+}
