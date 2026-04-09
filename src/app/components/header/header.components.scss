@@ -1,19 +1,28 @@
 @use '../../../styles/variables' as variables;
+@use '../../../styles/mixins/button' as mixins;
 
 .header {
   padding: 20px 0;
 
   &__content {
     display: flex;
+    align-items: center;
     justify-content: space-between;
+  }
+
+  &__wrapper {
+    &-nav {
+      display: flex;
+      gap: 10px
+    }
   }
 
   &__list {
     &-nav {
       display: flex;
-      gap: 10px;
-      height: 100%;
       align-items: center;
+      justify-content: space-between;
+      height: 100%;
     }
   }
 
@@ -39,6 +48,30 @@
 
     &--nav {
       padding: 0 20px;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(0.95);
+      }
+    }
+
+    &-sign-in {
+      @include mixins.button-base($width: 152px);
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      justify-content: center;
+
+      &::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 20px;
+        background-image: url("/assets/images/vector/sign-in.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
     }
   }
 }

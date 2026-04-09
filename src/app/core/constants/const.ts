@@ -1,3 +1,3 @@
-export enum AppRoute  {
+export enum AppRoute {
   MAIN = ''
 }

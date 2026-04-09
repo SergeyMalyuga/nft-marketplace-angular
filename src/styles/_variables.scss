@@ -7,6 +7,9 @@ $white: rgb(255, 255, 255);
 $gray-400: rgba(59, 59, 59);
 $gray-500: rgb(43, 43, 43);
 
+/* violet */
+$violet: rgb(162 89 255);
+
 /* background */
 $bg-main: $gray-500;
 $bg-accent: $gray-400;
@@ -16,6 +19,10 @@ $text-main: $white;
 
 /* link */
 $link-main: $white;
+
+/* button */
+$button-main: $white;
+$button-bg: $violet;
 
 // ==== TYPOGRAPHY ==== //
 $font-family-primary: 'Work Sans', sans-serif;
