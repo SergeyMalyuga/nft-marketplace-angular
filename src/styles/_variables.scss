@@ -1,7 +1,10 @@
+@use "sass:color";
+
 // ==== COLOR ==== //
 
 /* base */
 $white: rgb(255, 255, 255);
+$black: rgb(0, 0, 0);
 
 /* gray */
 $gray-400: rgba(59, 59, 59);
@@ -23,6 +26,12 @@ $link-main: $white;
 /* button */
 $button-main: $white;
 $button-bg: $violet;
+
+/* burger-line */
+$burger-line-bg: $violet;
+
+/* overlay */
+$overlay-bg: color.scale($black, $alpha: -70%);
 
 // ==== TYPOGRAPHY ==== //
 $font-family-primary: 'Work Sans', sans-serif;
