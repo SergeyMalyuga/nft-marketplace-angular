@@ -2,7 +2,10 @@
 @use '../../../styles/mixins/button' as mixins;
 
 .header {
-  padding: 20px 0;
+  max-width: 1280px;
+  width: 100%;
+  padding: 20px 50px;
+  margin: 0 auto;
 
   &__content {
     display: flex;
@@ -13,7 +16,23 @@
   &__wrapper {
     &-nav {
       display: flex;
-      gap: 10px
+      gap: 10px;
+
+      @media (width <= 929px) {
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: variables.$overlay-bg;
+        backdrop-filter: blur(10px);
+        gap: 65px;
+        transform: translateX(-100%);
+        transition: transform 0.5s ease;
+      }
     }
   }
 
@@ -23,6 +42,11 @@
       align-items: center;
       justify-content: space-between;
       height: 100%;
+
+      @media (width <= 929px) {
+        flex-direction: column;
+        gap: 35px;
+      }
     }
   }
 
@@ -40,9 +64,6 @@
 
       img {
         display: block;
-        max-width: 243px;
-        width: 100%;
-        height: auto;
       }
     }
 
@@ -73,5 +94,54 @@
         background-size: cover;
       }
     }
+
+    @media (width <= 929px) {
+      font-size: 28px;
+    }
+  }
+
+  &__button {
+    &-burger {
+      display: none;
+      border: none;
+      width: 24px;
+      height: 24px;
+      background-color: transparent;
+      padding: 0;
+      cursor: pointer;
+      z-index: 2;
+
+      &::before, &::after {
+        content: '';
+        display: block;
+        width: 24px;
+        height: 2px;
+        background-color: variables.$burger-line-bg;
+        transition: width 0.3s ease;
+      }
+
+      &:hover {
+        &::before, &::after {
+          width: 75%;
+        }
+      }
+
+      @media (width <= 929px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  &__line-middle {
+    display: block;
+    background-color: variables.$burger-line-bg;
+    width: 24px;
+    height: 2px;
+  }
+
+  @media (width <= 480px) {
+    padding: 20px 30px;
   }
 }
