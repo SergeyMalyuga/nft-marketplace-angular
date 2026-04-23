@@ -33,10 +33,18 @@ body {
 }
 
 .container {
-  max-width: 1194px;
+  max-width: 1280px;
   width: 100%;
-  padding: 0 72px;
+  padding: 0 115px;
   margin: 0 auto;
+
+  @media (width <= 930px) {
+    padding: 0 72px;
+  }
+
+  @media (width <= 480px) {
+    padding: 0 30px;
+  }
 }
 
 .visually-hidden {
