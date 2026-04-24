@@ -1,5 +1,7 @@
 @use './styles/variables' as variables;
 @use './styles/fonts';
+@use "swiper/swiper";
+@use "swiper/modules/pagination";
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -44,6 +46,30 @@ body {
 
   @media (width <= 480px) {
     padding: 0 30px;
+  }
+}
+
+.section-title {
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 120%;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+
+  @media (width <= 930px) {
+    font-size: 28px;
+    line-height: 140%;
+  }
+}
+
+.section-subtitle {
+  text-transform: capitalize;
+  margin-bottom: 60px;
+
+  @media (width <= 930px) {
+    font-size: 16px;
+    line-height: 140%;
+    margin-bottom: 40px;
   }
 }
 
