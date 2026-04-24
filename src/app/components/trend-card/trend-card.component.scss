@@ -1,0 +1,22 @@
+.trend-card {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 330px;
+  width: 100%;
+
+  &__nfts {
+    display: flex;
+    gap: 15px;
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  &__avatar {
+    display: block;
+  }
+}
