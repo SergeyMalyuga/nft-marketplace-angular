@@ -7,7 +7,7 @@ import {ChangeDetectionStrategy, Component, signal} from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HeaderComponents {
-  public isNavMenuOpen = signal<boolean>(true);
+  public isNavMenuOpen = signal<boolean>(false);
 
   public toggleNavMenu() {
     this.isNavMenuOpen.set(!this.isNavMenuOpen());
