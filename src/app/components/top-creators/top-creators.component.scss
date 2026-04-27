@@ -1,0 +1,73 @@
+@use '../../../styles/variables' as variables;
+@use '../../../styles/mixins/button' as mixins;
+
+.top-creators {
+  padding: 80px 0;
+
+  &__content {
+    position: relative;
+  }
+
+  &__link {
+    @include mixins.button-base($width: 247px);
+
+    position: absolute;
+    top: 33px;
+    right: 115px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background-color: transparent;
+    border: 2px solid variables.$link-border-color;
+    text-transform: capitalize;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 20px;
+      height: 20px;
+      background-image: url("/assets/images/vector/rocket.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    @media (width <= 1115px) {
+      position: static;
+
+    }
+
+    @media (width <= 775px) {
+      margin: 0 auto;
+    }
+
+    @media (width <= 480px) {
+      margin: 0;
+      width: 100%;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+
+    @media (width <= 1115px) {
+      margin-bottom: 30px;
+    }
+
+    @media (width <= 930px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (width <= 775px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  @media (width <= 480px) {
+    padding: 40px 0;
+  }
+}
