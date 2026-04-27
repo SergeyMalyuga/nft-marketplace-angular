@@ -1,4 +1,5 @@
 import {TrendCard} from '../models/trend-card.model';
+import {CreatorCard} from '../models/creator-card';
 
 export enum AppRoute {
   MAIN = ''
@@ -106,6 +107,174 @@ export const TREND_CARDS: TrendCard[] = [
       name: 'BeKind2Robots'
     }
   }
+]
 
+export const CREATOR_CARDS: CreatorCard[] = [
+  {
+    id: '1',
+    rank: 1,
+    image: {
+      url: '/assets/images/vector/keepitreal.svg',
+      width: 120,
+      height: 120,
+      alt: 'Keepitreal'
+    },
+    name: 'Keepitreal',
+    totalSales: 34.53,
+    href: '#'
+  },
 
+  {
+    id: '2',
+    rank: 2,
+    image: {
+      url: '/assets/images/vector/digi-lab.svg',
+      width: 120,
+      height: 120,
+      alt: 'DigiLab'
+    },
+    name: 'DigiLab',
+    totalSales: 34.53,
+    href: '#'
+  },
+
+  {
+    id: '3',
+    rank: 3,
+    image: {
+      url: '/assets/images/vector/gravity-one.svg',
+      width: 120,
+      height: 120,
+      alt: 'GravityOne'
+    },
+    name: 'GravityOne',
+    totalSales: 34.53,
+    href: '#'
+  },
+
+  {
+    id: '4',
+    rank: 4,
+    image: {
+      url: '/assets/images/vector/juanie.svg',
+      width: 120,
+      height: 120,
+      alt: 'Juanie'
+    },
+    name: 'Juanie',
+    totalSales: 34.53,
+    href: '#'
+  },
+
+  {
+    id: '5',
+    rank: 5,
+    image: {
+      url: '/assets/images/vector/blue-whale.svg',
+      width: 120,
+      height: 120,
+      alt: 'BlueWhale'
+    },
+    name: 'BlueWhale',
+    totalSales: 34.53,
+    href: '#'
+  },
+
+  {
+    id: '6',
+    rank: 6,
+    image: {
+      url: '/assets/images/vector/mr-fox.svg',
+      width: 120,
+      height: 120,
+      alt: 'Mr Fox'
+    },
+    name: 'Mr Fox',
+    totalSales: 34.53,
+    href: '#'
+  },
+
+  {
+    id: '7',
+    rank: 7,
+    image: {
+      url: '/assets/images/vector/shroomie.svg',
+      width: 120,
+      height: 120,
+      alt: 'Shroomie'
+    },
+    name: 'Shroomie',
+    totalSales: 34.53,
+    href: '#'
+  },
+
+  {
+    id: '8',
+    rank: 8,
+    image: {
+      url: '/assets/images/vector/robotica.svg',
+      width: 120,
+      height: 120,
+      alt: 'Robotica'
+    },
+    name: 'Robotica',
+    totalSales: 34.53,
+    href: '#'
+  },
+
+  {
+    id: '9',
+    rank: 9,
+    image: {
+      url: '/assets/images/vector/rusty-robot.svg',
+      width: 120,
+      height: 120,
+      alt: 'RustyRobot'
+    },
+    name: 'RustyRobot',
+    totalSales: 34.53,
+    href: '#'
+  },
+
+  {
+    id: '10',
+    rank: 10,
+    image: {
+      url: '/assets/images/vector/animakid.svg',
+      width: 120,
+      height: 120,
+      alt: 'Animakid'
+    },
+    name: 'Animakid',
+    totalSales: 34.53,
+    href: '#'
+  },
+
+  {
+    id: '11',
+    rank: 11,
+    image: {
+      url: '/assets/images/vector/dotgu.svg',
+      width: 120,
+      height: 120,
+      alt: 'Dotgu'
+    },
+    name: 'Dotgu',
+    totalSales: 34.53,
+    href: '#'
+  },
+
+  {
+    id: '12',
+    rank: 12,
+    image: {
+      url: '/assets/images/vector/ghiblier.svg',
+      width: 120,
+      height: 120,
+      alt: 'Ghiblier'
+    },
+    name: 'Ghiblier',
+    totalSales: 34.53,
+    href: '#'
+  },
 ]
