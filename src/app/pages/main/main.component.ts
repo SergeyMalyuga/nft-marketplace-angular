@@ -4,6 +4,7 @@ import {HeroComponent} from '../../components/hero/hero.component';
 import {TrendCollectionComponent} from '../../components/trend-collection/trend-collection.component';
 import {TopCreatorsComponent} from '../../components/top-creators/top-creators.component';
 import {CategoriesComponent} from '../../components/categories/categories.component';
+import {MoreNtfsComponent} from '../../components/more-ntfs/more-ntfs.component';
 
 @Component({
   selector: 'app-main',
@@ -12,7 +13,8 @@ import {CategoriesComponent} from '../../components/categories/categories.compon
     HeroComponent,
     TrendCollectionComponent,
     TopCreatorsComponent,
-    CategoriesComponent
+    CategoriesComponent,
+    MoreNtfsComponent
   ],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss',
