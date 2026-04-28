@@ -1,5 +1,6 @@
 import {TrendCard} from '../models/trend-card.model';
 import {CreatorCard} from '../models/creator-card';
+import {CategoryCard} from '../models/category-card.model';
 
 export enum AppRoute {
   MAIN = ''
@@ -276,5 +277,151 @@ export const CREATOR_CARDS: CreatorCard[] = [
     name: 'Ghiblier',
     totalSales: 34.53,
     href: '#'
+  },
+]
+
+export const CATEGORY_CARDS: CategoryCard[] = [
+  {
+    id: "1",
+    href: "#",
+    image: {
+      url: "/assets/images/raster/categories-art.png",
+      width: 240,
+      height: 240,
+      alt: "Art"
+    },
+    name: "Art",
+    decor: {
+      url: "/assets/images/vector/categories-paint-brush.svg",
+      width: 100,
+      height: 100,
+      alt: ""
+    }
+  },
+
+  {
+    id: "2",
+    href: "#",
+    image: {
+      url: "/assets/images/raster/categories-collectibles.png",
+      width: 240,
+      height: 240,
+      alt: "Collectibles"
+    },
+    name: "Collectibles",
+    decor: {
+      url: "/assets/images/vector/categories-swatches.svg",
+      width: 100,
+      height: 100,
+      alt: ""
+    }
+  },
+
+  {
+    id: "3",
+    href: "#",
+    image: {
+      url: "/assets/images/raster/categories-music.png",
+      width: 240,
+      height: 240,
+      alt: "Music"
+    },
+    name: "Music",
+    decor: {
+      url: "/assets/images/vector/categories-music-notes.svg",
+      width: 100,
+      height: 100,
+      alt: ""
+    }
+  },
+
+  {
+    id: "4",
+    href: "#",
+    image: {
+      url: "/assets/images/raster/categories-photography.png",
+      width: 240,
+      height: 240,
+      alt: "Photography"
+    },
+    name: "Photography",
+    decor: {
+      url: "/assets/images/vector/categories-сamera.svg",
+      width: 100,
+      height: 100,
+      alt: ""
+    }
+  },
+
+  {
+    id: "5",
+    href: "#",
+    image: {
+      url: "/assets/images/raster/categories-video.png",
+      width: 240,
+      height: 240,
+      alt: "Video"
+    },
+    name: "Video",
+    decor: {
+      url: "/assets/images/vector/categories-video-сamera.svg",
+      width: 100,
+      height: 100,
+      alt: ""
+    }
+  },
+
+  {
+    id: "6",
+    href: "#",
+    image: {
+      url: "/assets/images/raster/categories-utility.png",
+      width: 240,
+      height: 240,
+      alt: "Utility"
+    },
+    name: "Utility",
+    decor: {
+      url: "/assets/images/vector/categories-magic-wand.svg",
+      width: 100,
+      height: 100,
+      alt: ""
+    }
+  },
+
+  {
+    id: "7",
+    href: "#",
+    image: {
+      url: "/assets/images/raster/categories-sport.png",
+      width: 240,
+      height: 240,
+      alt: "Sport"
+    },
+    name: "Sport",
+    decor: {
+      url: "/assets/images/vector/categories-basketball.svg",
+      width: 100,
+      height: 100,
+      alt: ""
+    }
+  },
+
+  {
+    id: "8",
+    href: "#",
+    image: {
+      url: "/assets/images/raster/categories-virtual-worlds.png",
+      width: 240,
+      height: 240,
+      alt: "Virtual worlds"
+    },
+    name: "Virtual worlds",
+    decor: {
+      url: "/assets/images/vector/categories-planet.svg",
+      width: 100,
+      height: 100,
+      alt: ""
+    }
   },
 ]
