@@ -1,0 +1,55 @@
+@use '../../../styles/variables' as variables;
+
+.category-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+  color: variables.$white;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 140%;
+  background-color: variables.$bg-accent;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 100%;
+
+  &:hover {
+    transform: scale(0.95);
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+    height: auto;
+    filter: blur(15px);
+  }
+
+  &__label {
+    padding: 20px 20px 25px;
+    text-transform: capitalize;
+  }
+
+
+  &__wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__decor {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @media (width <= 834px) {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  @media (width <= 930px) {
+    font-size: 16px;
+  }
+}

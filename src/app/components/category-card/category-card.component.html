@@ -1,0 +1,19 @@
+<a class="category-card" [href]="card.href"
+   target="_blank"
+   rel="noreferrer noopener">
+  <div class="category-card__wrapper">
+    <img class="category-card__image"
+         [ngSrc]="card.image.url"
+         [width]="card.image.width"
+         [height]="card.image.height"
+         [alt]="card.image.alt"
+         loading="lazy"/>
+    <img class="category-card__decor"
+         [ngSrc]="card.decor.url"
+         [width]="card.decor.width"
+         [height]="card.decor.height"
+         [alt]="card.decor.alt"
+    />
+  </div>
+  <span class="category-card__label">{{ card.name }}</span>
+</a>
