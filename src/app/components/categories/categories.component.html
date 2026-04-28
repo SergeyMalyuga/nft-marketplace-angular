@@ -1,0 +1,12 @@
+<section class="categories">
+  <div class="container">
+    <h2 class="categories__title section-title">Browse Categories</h2>
+    <ul class="categories__list">
+      @for (card of CATEGORY_CARDS; track card.id) {
+        <li class="categories__item">
+          <app-category-card [card]="card"/>
+        </li>
+      }
+    </ul>
+  </div>
+</section>

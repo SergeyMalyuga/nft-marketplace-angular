@@ -1,0 +1,27 @@
+@use '../../../styles/variables' as variables;
+
+.categories {
+  padding: 80px 0;
+
+  &__title {
+    margin-bottom: 60px;
+
+    @media (width <= 930px) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+
+    @media (width <= 775px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (width <= 480px) {
+    padding: 40px 0;
+  }
+}
