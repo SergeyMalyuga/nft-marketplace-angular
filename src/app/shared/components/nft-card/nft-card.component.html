@@ -1,0 +1,32 @@
+<article class="nft-card">
+  <a class="nft-card__link" [href]="card.href">
+    <img class="nft-card__image"
+         [ngSrc]="card.image.url"
+         [width]="card.image.width"
+         [height]="card.image.height"
+         [alt]="card.image.alt"
+    />
+    <div class="nft-card__wrapper-content">
+      <h3 class="nft-card__title-main">{{ card.title }}</h3>
+      <div class="nft-card__wrapper-user">
+        <img class="nft-card__avatar"
+             [ngSrc]="card.owner.avatar.url"
+             [width]="card.owner.avatar.width"
+             [height]="card.owner.avatar.height"
+             [alt]="card.owner.avatar.alt"
+        />
+        <span class="nft-card__name">{{ card.owner.name }}</span>
+      </div>
+      <div class="nft-card__wrapper-info">
+        <div class="nft-card__wrapper-price">
+          <span class="nft-card__title-info">Price</span>
+          <data class="nft-card__price" [value]="card.price">{{ card.price }} ETH</data>
+        </div>
+        <div class="nft-card__wrapper-bid">
+          <span class="nft-card__title-info">Highest Bid</span>
+          <data class="nft-card__price" [value]="card.highestBid">{{ card.highestBid }} wETH</data>
+        </div>
+      </div>
+    </div>
+  </a>
+</article>
