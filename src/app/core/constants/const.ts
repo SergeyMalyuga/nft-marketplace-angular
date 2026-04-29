@@ -1,6 +1,7 @@
 import {TrendCard} from '../models/trend-card.model';
 import {CreatorCard} from '../models/creator-card';
 import {CategoryCard} from '../models/category-card.model';
+import {NftCard} from '../models/nft-card.model';
 
 export enum AppRoute {
   MAIN = ''
@@ -424,4 +425,144 @@ export const CATEGORY_CARDS: CategoryCard[] = [
       alt: ""
     }
   },
+]
+
+export const NFT_CARDS: NftCard[] = [
+  {
+    id: "1",
+    href: "#",
+    image: {
+      url: "/assets/images/raster/nft-distant-galaxy.png",
+      width: 420,
+      height: 296,
+      alt: "Distant galaxy"
+    },
+    title: "Distant galaxy",
+    owner: {
+      avatar: {
+        url: "/assets/images/vector/nft-avatar-moon-dancer.svg",
+        width: 24,
+        height: 24,
+        alt: "MoonDancer avatar"
+      },
+      name: "MoonDancer",
+    },
+    price: 1.63,
+    highestBid: 0.33
+  },
+
+  {
+    id: "2",
+    href: "#",
+    image: {
+      url: "/assets/images/raster/nft-life-on-edena.png",
+      width: 420,
+      height: 296,
+      alt: "Life on Edena"
+    },
+    title: "Life on Edena",
+    owner: {
+      avatar: {
+        url: "/assets/images/vector/nft-avatar-nebula-kid.svg",
+        width: 24,
+        height: 24,
+        alt: "NebulaKid avatar"
+      },
+      name: "NebulaKid",
+    },
+    price: 1.63,
+    highestBid: 0.33
+  },
+
+  {
+    id: "3",
+    href: "#",
+    image: {
+      url: "/assets/images/raster/nft-astro-fiction.png",
+      width: 420,
+      height: 296,
+      alt: "AstroFiction"
+    },
+    title: "AstroFiction",
+    owner: {
+      avatar: {
+        url: "/assets/images/vector/nft-avatar-spaceone.svg",
+        width: 24,
+        height: 24,
+        alt: "Spaceone avatar"
+      },
+      name: "Spaceone ",
+    },
+    price: 1.63,
+    highestBid: 0.33
+  },
+
+  {
+    id: "4",
+    href: "#",
+    image: {
+      url: "/assets/images/raster/nft-distant-galaxy.png",
+      width: 420,
+      height: 296,
+      alt: "Distant galaxy"
+    },
+    title: "Distant galaxy",
+    owner: {
+      avatar: {
+        url: "/assets/images/vector/nft-avatar-moon-dancer.svg",
+        width: 24,
+        height: 24,
+        alt: "MoonDancer avatar"
+      },
+      name: "MoonDancer",
+    },
+    price: 1.63,
+    highestBid: 0.33
+  },
+
+  {
+    id: "5",
+    href: "#",
+    image: {
+      url: "/assets/images/raster/nft-life-on-edena.png",
+      width: 420,
+      height: 296,
+      alt: "Life on Edena"
+    },
+    title: "Life on Edena",
+    owner: {
+      avatar: {
+        url: "/assets/images/vector/nft-avatar-nebula-kid.svg",
+        width: 24,
+        height: 24,
+        alt: "NebulaKid avatar"
+      },
+      name: "NebulaKid",
+    },
+    price: 1.63,
+    highestBid: 0.33
+  },
+
+  {
+    id: "6",
+    href: "#",
+    image: {
+      url: "/assets/images/raster/nft-astro-fiction.png",
+      width: 420,
+      height: 296,
+      alt: "AstroFiction"
+    },
+    title: "AstroFiction",
+    owner: {
+      avatar: {
+        url: "/assets/images/vector/nft-avatar-spaceone.svg",
+        width: 24,
+        height: 24,
+        alt: "Spaceone avatar"
+      },
+      name: "Spaceone ",
+    },
+    price: 1.63,
+    highestBid: 0.33
+  }
 ]
