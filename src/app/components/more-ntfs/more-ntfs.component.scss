@@ -24,7 +24,7 @@
     cursor: pointer;
     text-transform: capitalize;
     position: absolute;
-    bottom: 0;
+    top: 31px;
     right: 115px;
 
     &::before {
@@ -40,7 +40,48 @@
 
     @media (width <= 930px) {
       right: 72px;
+      top: 7px;
     }
+
+    @media (width <= 670px) {
+      inset: 0;
+      position: static;
+      margin: 0 auto;
+      max-width: 330px;
+      width: 100%;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+    @media (width <= 830px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (width <= 670px) {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__item {
+    @media (width <= 670px) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &__slide {
+    width: 330px;
+  }
+
+  &__card {
+    display: flex;
+    justify-content: center;
   }
 
   @media (width <= 480px) {
