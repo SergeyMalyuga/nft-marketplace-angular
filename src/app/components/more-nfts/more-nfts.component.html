@@ -1,0 +1,24 @@
+<section class="more-ntfs">
+  <div class="more-ntfs__content container">
+    <h2 class="section-title">Discover More NFTs</h2>
+    <p class="section-subtitle">Explore new trending NFTs</p>
+    @if (isSwiper()) {
+      <app-swiper [options]="DEFAULT_COLLECTION_SWIPER" swiperClass="swiper-nft">
+        @for (card of NFT_CARDS; track card.id) {
+          <div class="swiper-slide more-ntfs__slide">
+            <app-nft-card class="more-ntfs__card" [card]="card"/>
+          </div>
+        }
+      </app-swiper>
+    } @else {
+      <ul class="more-ntfs__list">
+        @for (card of NFT_CARDS; track card.id) {
+          <li class="more-ntfs__item">
+            <app-nft-card [card]="card"/>
+          </li>
+        }
+      </ul>
+    }
+    <button (click)="toggleList()" class="more-ntfs__button" type="button">{{isSwiper() ? 'See all' : 'Swiper' }}</button>
+  </div>
+</section>
