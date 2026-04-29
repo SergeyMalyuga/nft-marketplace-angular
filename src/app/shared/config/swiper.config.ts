@@ -1,6 +1,6 @@
 import {SwiperOptions} from 'swiper/types';
 
-export const TREND_COLLECTION_SWIPER = {
+export const DEFAULT_COLLECTION_SWIPER = {
   spaceBetween: 30,
   initialSlide: 1,
   centeredSlides: true,
