@@ -2,7 +2,7 @@
   <div class="content container">
     <h2 class="section-title">Trending Collection</h2>
     <p class="section-subtitle">Checkout our weekly updated trending collection.</p>
-    <app-swiper [options]="TREND_COLLECTION_SWIPER">
+    <app-swiper [options]="TREND_COLLECTION_SWIPER" swiperClass="swiper-trend">
       @for (card of TREND_CARDS; track card.id) {
         <div class="swiper-slide trend-collection__slide">
           <app-trend-card class="trend-collection__card" [card]="card"/>
