@@ -1,0 +1,113 @@
+@use '../../../styles/variables' as variables;
+@use '../../../styles/mixins/button' as mixins;
+
+.auction {
+  padding-bottom: 80px;
+
+  &__content {
+    padding-top: 360px;
+    padding-bottom: 60px;
+    position: relative;
+    background-image: url("/assets/images/raster/auction-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      inset: 0;
+      background: variables.$overlay-bg-violet;
+      z-index: -1;
+    }
+
+    @media (width <= 480px) {
+      padding-top: 120px;
+      padding-bottom: 40px;
+    }
+  }
+
+  &__user {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: variables.$bg-accent;
+    width: 151px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    order: 1;
+  }
+
+  &__name {
+    font-size: 16px;
+    line-height: 140%;
+  }
+
+  &__title {
+    font-size: 51px;
+    font-weight: 600;
+    line-height: 110%;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    order: 2;
+
+    @media (width <= 1023px) {
+      font-size: 38px;
+      line-height: 120%;
+    }
+  }
+
+  &__link {
+    @include mixins.button-base($width: 198px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+    background-color: variables.$white;
+    color: variables.$text-accent-dark;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 20px;
+      height: 20px;
+      background-image: url("/assets/images/vector/eye.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    order: 4
+  }
+
+  &__wrapper {
+    &-content {
+      position: relative;
+
+      @media (width <= 810px) {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+
+  &__timer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    order: 3;
+
+    @media (width <= 810px) {
+      position: static;
+      margin-bottom: 30px;
+    }
+  }
+
+  @media (width <= 480px) {
+    padding-bottom: 40px;
+  }
+}
