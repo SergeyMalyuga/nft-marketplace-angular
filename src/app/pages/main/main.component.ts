@@ -5,6 +5,7 @@ import {TrendCollectionComponent} from '../../components/trend-collection/trend-
 import {TopCreatorsComponent} from '../../components/top-creators/top-creators.component';
 import {CategoriesComponent} from '../../components/categories/categories.component';
 import {MoreNftsComponent} from '../../components/more-nfts/more-nfts.component';
+import {AuctionComponent} from '../../components/auction/auction.component';
 
 @Component({
   selector: 'app-main',
@@ -14,7 +15,8 @@ import {MoreNftsComponent} from '../../components/more-nfts/more-nfts.component'
     TrendCollectionComponent,
     TopCreatorsComponent,
     CategoriesComponent,
-    MoreNftsComponent
+    MoreNftsComponent,
+    AuctionComponent
   ],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss',
