@@ -2,6 +2,7 @@ import {TrendCard} from '../models/trend-card.model';
 import {CreatorCard} from '../models/creator-card';
 import {CategoryCard} from '../models/category-card.model';
 import {NftCard} from '../models/nft-card.model';
+import {AboutCard} from '../models/about-card.model';
 
 export enum AppRoute {
   MAIN = ''
@@ -565,4 +566,43 @@ export const NFT_CARDS: NftCard[] = [
     price: 1.63,
     highestBid: 0.33
   }
+]
+
+export const ABOUT_CARDS: AboutCard[] = [
+  {
+    id: "1",
+    image: {
+      url: "/assets/images/raster/about-wallet.png",
+      width: 250,
+      height: 250,
+      alt: "Wallet"
+    },
+    title: "Setup Your wallet",
+    description: "Set up your wallet of choice. Connect it to " +
+      "the Animarket by clicking the wallet icon in the top right corner."
+  },
+
+  {
+    id: "2",
+    image: {
+      url: "/assets/images/raster/about-collection.png",
+      width: 250,
+      height: 250,
+      alt: "Wallet"
+    },
+    title: "Setup Your wallet",
+    description: "Upload your work and setup your collection. Add a description, social links and floor price.",
+  },
+
+  {
+    id: "3",
+    image: {
+      url: "/assets/images/raster/about-earning.png",
+      width: 250,
+      height: 250,
+      alt: "Wallet"
+    },
+    title: "Setup Your wallet",
+    description: "Choose between auctions and fixed-price listings. Start earning by selling your NFTs or trading others.",
+  },
 ]
