@@ -1,0 +1,26 @@
+@use '../../../../styles/variables' as variables;
+
+.timer {
+  display: flex;
+  flex-direction: column;
+  background-color: variables.$timer-bg;
+  width: 295px;
+  padding: 30px;
+  border-radius: 20px;
+
+  &__time {
+    font-family: variables.$font-family-secondary;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 120%;
+    text-transform: capitalize;
+  }
+
+  &__title {
+    font-family: variables.$font-family-secondary;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 110%;
+    margin-bottom: 10px;
+  }
+}
