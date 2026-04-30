@@ -1,0 +1,14 @@
+@use '../../../styles/variables' as variables;
+
+.about {
+&__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+
+  @media (width <= 775px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+}

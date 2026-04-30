@@ -1,0 +1,13 @@
+<section class="about">
+  <div class="container">
+    <h2 class="section-title">How it works</h2>
+    <p class="section-subtitle">Find out how to get started</p>
+    <ul class="about__list">
+      @for (card of ABOUT_CARDS; track card.id) {
+        <li>
+          <app-about-card [card]="card"/>
+        </li>
+      }
+    </ul>
+  </div>
+</section>
