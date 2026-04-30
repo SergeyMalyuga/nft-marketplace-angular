@@ -6,6 +6,7 @@ import {TopCreatorsComponent} from '../../components/top-creators/top-creators.c
 import {CategoriesComponent} from '../../components/categories/categories.component';
 import {MoreNftsComponent} from '../../components/more-nfts/more-nfts.component';
 import {AuctionComponent} from '../../components/auction/auction.component';
+import {AboutComponent} from '../../components/about/about.component';
 
 @Component({
   selector: 'app-main',
@@ -16,7 +17,8 @@ import {AuctionComponent} from '../../components/auction/auction.component';
     TopCreatorsComponent,
     CategoriesComponent,
     MoreNftsComponent,
-    AuctionComponent
+    AuctionComponent,
+    AboutComponent
   ],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss',
