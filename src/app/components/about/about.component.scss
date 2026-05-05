@@ -1,6 +1,8 @@
 @use '../../../styles/variables' as variables;
 
 .about {
+  padding-bottom: 120px;
+
 &__list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -11,4 +13,12 @@
     flex-direction: column;
   }
 }
+
+  @media (width <= 930px) {
+    padding-bottom: 60px;
+  }
+
+  @media (width <= 480px) {
+    padding-bottom: 40px;
+  }
 }
