@@ -7,6 +7,7 @@ $white: rgb(255 255 255);
 $black: rgb(0 0 0);
 
 /* gray */
+$gray-200: rgb(204 204 204);
 $gray-300: rgb(133 133 132);
 $gray-400: rgb(59 59 59);
 $gray-500: rgb(43 43 43);
@@ -22,6 +23,7 @@ $bg-accent: $gray-400;
 $text-main: $white;
 $text-accent: $gray-300;
 $text-accent-dark: $gray-500;
+$text-accent-light: $gray-200;
 
 /* link */
 $link-main: $white;
@@ -41,6 +43,9 @@ $overlay-bg-violet: linear-gradient(180.00deg, rgb(162 89 255 / 0%) 0%, rgb(162 
 
 /* timer */
 $timer-bg: color.scale($gray-400, $alpha: -50%);
+
+/* copyright */
+$copyright-border-color: $gray-300;
 
 // ==== TYPOGRAPHY ==== //
 $font-family-primary: 'Work Sans', sans-serif;
