@@ -8,6 +8,7 @@ import {MoreNftsComponent} from '../../components/more-nfts/more-nfts.component'
 import {AuctionComponent} from '../../components/auction/auction.component';
 import {AboutComponent} from '../../components/about/about.component';
 import {Subscribe} from '../../components/subscribe/subscribe';
+import {FooterComponent} from '../../components/footer/footer.component';
 
 @Component({
   selector: 'app-main',
@@ -20,7 +21,8 @@ import {Subscribe} from '../../components/subscribe/subscribe';
     MoreNftsComponent,
     AuctionComponent,
     AboutComponent,
-    Subscribe
+    Subscribe,
+    FooterComponent
   ],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss',
