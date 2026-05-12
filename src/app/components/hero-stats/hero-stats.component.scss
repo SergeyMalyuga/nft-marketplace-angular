@@ -2,29 +2,29 @@
 @use '../../../styles/mixins/button' as mixins;
 
 .stats {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 
-    @media (width <= 930px) {
-      gap: 20px;
-    }
+  @media (width <= 930px) {
+    gap: 20px;
+  }
+
+  @media (width <= 752px) {
+    display: none;
+  }
+
+  @media (width <= 480px) {
+    gap: 10px;
+  }
+
+  &--bottom {
+    display: none;
 
     @media (width <= 752px) {
-      display: none;
+      display: flex;
     }
-
-    @media (width <= 480px) {
-      gap: 10px;
-    }
-
-    &--bottom {
-      display: none;
-
-      @media (width <= 752px) {
-        display: flex;
-      }
-    }
+  }
 
   &__list {
     display: flex;
@@ -32,37 +32,55 @@
   }
 
   &__item {
-      width: calc((100% - (30px * 2)) / 3);
+    width: calc((100% - (30px * 2)) / 3);
 
-      span {
-        display: block;
+    span {
+      display: block;
+    }
+
+    span:first-of-type {
+      font-family: variables.$font-family-secondary;
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 140%;
+
+      @media (width <= 930px) {
+        font-size: 22px;
+        line-height: 160%;
       }
+    }
 
-      span:first-of-type {
-        font-family: variables.$font-family-secondary;
-        font-size: 28px;
-        font-weight: 700;
+    span:last-of-type {
+      font-size: 24px;
+      text-transform: capitalize;
+
+      @media (width <= 930px) {
+        font-size: 16px;
         line-height: 140%;
-
-        @media (width <= 930px) {
-          font-size: 22px;
-          line-height: 160%;
-        }
       }
-
-      span:last-of-type {
-        font-size: 24px;
-        text-transform: capitalize;
-
-        @media (width <= 930px) {
-          font-size: 16px;
-          line-height: 140%;
-        }
-      }
+    }
   }
 
   &__button {
     @include mixins.button-base($width: 224px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    cursor: pointer;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 20px;
+      height: 20px;
+      background-color: white;
+      mask-image: url("/assets/images/vector/rocket.svg");
+      mask-repeat: no-repeat;
+      mask-size: cover;
+      mask-position: center;
+    }
 
     @media (width <= 480px) {
       width: 100%;
