@@ -73,6 +73,10 @@ body {
   }
 }
 
+.no-overflow {
+  overflow: hidden;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
