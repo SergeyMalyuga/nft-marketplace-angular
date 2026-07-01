@@ -5,4 +5,11 @@ export const routes: Routes = [{
   path: AppRoute.MAIN,
   title: 'Main',
   loadComponent: () => import('./pages/main/main.component').then(m => m.MainComponent),
-}];
+},
+  {
+    path: AppRoute.LOGIN,
+    title: 'Login',
+    loadComponent: () => import('./pages/login/login.component').then(m => m.LoginComponent),
+  }
+
+];

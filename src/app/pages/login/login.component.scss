@@ -1,0 +1,145 @@
+@use '../../../styles/variables' as variables;
+@use '../../../styles/mixins/button' as mixins;
+
+.page-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.page-main {
+  flex-grow: 1;
+}
+
+.login {
+  height: 100%;
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+    padding: 0;
+    height: 100%;
+
+    @media (width <= 934px) {
+      gap: 40px;
+    }
+  }
+
+  &__title {
+    font-size: 51px;
+    font-weight: 600;
+    line-height: 110%;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+
+    @media (width <= 934px) {
+      font-size: 38px;
+      line-height: 120%;
+    }
+  }
+
+  &__text {
+    margin-bottom: 40px;
+
+    @media (width <= 934px) {
+      font-size: 16px;
+      line-height: 140%;
+    }
+
+    @media (width <= 768px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__wrapper {
+    &-image {
+      width: 100%;
+    }
+
+    &-info {
+      align-self: center;
+    }
+
+    &-input {
+      position: relative;
+
+      &:not(:last-of-type) {
+        margin-bottom: 15px;
+      }
+
+      &:last-of-type {
+        margin-bottom: 30px;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 20px;
+        transform: translateY(-50%);
+        display: block;
+        width: 20px;
+        height: 20px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+
+      &--user {
+        &::before {
+          background-image: url("/assets/images/vector/user-icon.svg");
+        }
+      }
+
+      &--email-login {
+        &::before {
+          background-image: url("/assets/images/vector/envelope-simple-icon.svg");
+        }
+      }
+
+      &--password {
+        &::before {
+          background-image: url("/assets/images/vector/lock-key-icon.svg");
+        }
+      }
+    }
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__input {
+    display: flex;
+    align-items: center;
+    width: 330px;
+    padding: 16px 52px;
+    border: 1px solid variables.$input-border-color;
+    border-radius: 20px;
+    background-color: variables.$input-bg;
+    color: variables.$input-text-color;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    text-align: left;
+
+    &::placeholder {
+      color: variables.$input-text-color;
+    }
+  }
+
+  &__button {
+    @include mixins.button-base($width: 330px);
+
+    cursor: pointer;
+  }
+}

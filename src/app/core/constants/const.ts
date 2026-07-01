@@ -5,7 +5,8 @@ import {NftCard} from '../models/nft-card.model';
 import {AboutCard} from '../models/about-card.model';
 
 export enum AppRoute {
-  MAIN = ''
+  MAIN = '',
+  LOGIN = 'login',
 }
 
 export const TREND_CARDS: TrendCard[] = [

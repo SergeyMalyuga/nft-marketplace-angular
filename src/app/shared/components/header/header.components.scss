@@ -1,5 +1,5 @@
-@use '../../../styles/variables' as variables;
-@use '../../../styles/mixins/button' as mixins;
+@use '../../../../styles/variables' as variables;
+@use '../../../../styles/mixins/button' as mixins;
 
 .header {
   max-width: 1280px;
@@ -83,6 +83,7 @@ z-index: 2;
 
     &-sign-in {
       @include mixins.button-base($width: 152px);
+
       display: flex;
       gap: 12px;
       align-items: center;

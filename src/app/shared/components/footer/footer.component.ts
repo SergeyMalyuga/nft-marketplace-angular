@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import {NgOptimizedImage} from '@angular/common';
-import {SubscribeFormComponent} from '../../shared/components/subscribe-form/subscribe-form.component';
+import {SubscribeFormComponent} from '../subscribe-form/subscribe-form.component';
 
 @Component({
   selector: 'app-footer',
