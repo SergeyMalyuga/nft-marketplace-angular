@@ -33,7 +33,7 @@ $link-bg-accent: $violet;
 /* button */
 $button-main: $white;
 $button-bg: $violet;
-$buttonborder-color: $violet;
+$button-border-color: $violet;
 
 /* burger-line */
 $burger-line-bg: $violet;
@@ -47,6 +47,11 @@ $timer-bg: color.scale($gray-400, $alpha: -50%);
 
 /* copyright */
 $copyright-border-color: $gray-300;
+
+/* input */
+$input-border-color: $gray-300;
+$input-bg: $white;
+$input-text-color: $gray-500;
 
 // ==== TYPOGRAPHY ==== //
 $font-family-primary: 'Work Sans', sans-serif;
