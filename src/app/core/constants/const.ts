@@ -7,6 +7,7 @@ import {AboutCard} from '../models/about-card.model';
 export enum AppRoute {
   MAIN = '',
   LOGIN = 'login',
+  WALLET = 'wallet',
 }
 
 export const TREND_CARDS: TrendCard[] = [
@@ -576,7 +577,7 @@ export const ABOUT_CARDS: AboutCard[] = [
       url: "/assets/images/raster/about-wallet.png",
       width: 250,
       height: 250,
-      alt: "Wallet"
+      alt: "WalletComponent"
     },
     title: "Setup Your wallet",
     description: "Set up your wallet of choice. Connect it to " +
@@ -589,7 +590,7 @@ export const ABOUT_CARDS: AboutCard[] = [
       url: "/assets/images/raster/about-collection.png",
       width: 250,
       height: 250,
-      alt: "Wallet"
+      alt: "WalletComponent"
     },
     title: "Setup Your wallet",
     description: "Upload your work and setup your collection. Add a description, social links and floor price.",
@@ -601,7 +602,7 @@ export const ABOUT_CARDS: AboutCard[] = [
       url: "/assets/images/raster/about-earning.png",
       width: 250,
       height: 250,
-      alt: "Wallet"
+      alt: "WalletComponent"
     },
     title: "Setup Your wallet",
     description: "Choose between auctions and fixed-price listings. Start earning by selling your NFTs or trading others.",
