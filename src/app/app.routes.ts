@@ -10,6 +10,10 @@ export const routes: Routes = [{
     path: AppRoute.LOGIN,
     title: 'Login',
     loadComponent: () => import('./pages/login/login.component').then(m => m.LoginComponent),
+  },
+  {
+    path: AppRoute.WALLET,
+    title: 'Wallet',
+    loadComponent: () => import('./pages/wallet/wallet.component').then(m => m.WalletComponent),
   }
-
 ];
