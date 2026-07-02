@@ -1,0 +1,24 @@
+<div class="page-layout">
+  <app-header/>
+  <main class="page-main">
+    <section class="wallet">
+      <div class="wallet__content container">
+        <picture class="wallet__wrapper-image">
+          <source srcset="/assets/images/raster/wallet-decorate-mobile.jpg" media="(max-width: 870px)">
+          <source srcset="/assets/images/raster/wallet-decorate-tablet.jpg" media="(max-width: 934px)">
+          <img src="/assets/images/raster/wallet-decorate-desktop.jpg" width="610" height="642" alt=""/>
+        </picture>
+        <div class="wallet__info">
+          <h2 class="title">Connect wallet</h2>
+          <p class="wallet__text text">Choose a wallet you want to connect. There are several wallet providers.</p>
+          <ul class="wallet__list" aria-label="Электронные кошельки">
+            <li><a class="wallet__link wallet__link--metamask" href="#">Metamask</a></li>
+            <li><a class="wallet__link wallet__link--wallet-connect" href="#">Wallet Connect</a></li>
+            <li><a class="wallet__link wallet__link--coinbase" href="#">Coinbase</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <app-footer/>
+</div>
