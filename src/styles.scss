@@ -77,6 +77,32 @@ body {
   overflow: hidden;
 }
 
+.title {
+  font-size: 51px;
+  font-weight: 600;
+  line-height: 110%;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+
+  @media (width <= 934px) {
+    font-size: 38px;
+    line-height: 120%;
+  }
+}
+
+.text {
+  margin-bottom: 40px;
+
+  @media (width <= 934px) {
+    font-size: 16px;
+    line-height: 140%;
+  }
+
+  @media (width <= 768px) {
+    margin-bottom: 30px;
+  }
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
