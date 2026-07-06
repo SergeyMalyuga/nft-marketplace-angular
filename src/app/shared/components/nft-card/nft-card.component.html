@@ -1,5 +1,5 @@
 <article class="nft-card">
-  <a class="nft-card__link" [href]="card.href">
+  <a class="nft-card__link" [routerLink]="[AppRoute.ARTIST, 1]">
     <img class="nft-card__image"
          [ngSrc]="card.image.url"
          [width]="card.image.width"
