@@ -8,6 +8,7 @@ export enum AppRoute {
   MAIN = '',
   LOGIN = 'login',
   WALLET = 'wallet',
+  ARTIST = 'artist',
 }
 
 export const TREND_CARDS: TrendCard[] = [
@@ -504,12 +505,12 @@ export const NFT_CARDS: NftCard[] = [
     id: "4",
     href: "#",
     image: {
-      url: "/assets/images/raster/nft-distant-galaxy.png",
+      url: "/assets/images/raster/nft-crypto-city.png",
       width: 420,
       height: 296,
-      alt: "Distant galaxy"
+      alt: "Crypto city"
     },
-    title: "Distant galaxy",
+    title: "Crypto city",
     owner: {
       avatar: {
         url: "/assets/images/vector/nft-avatar-moon-dancer.svg",
@@ -527,12 +528,12 @@ export const NFT_CARDS: NftCard[] = [
     id: "5",
     href: "#",
     image: {
-      url: "/assets/images/raster/nft-life-on-edena.png",
+      url: "/assets/images/raster/nft-color-dog.png",
       width: 420,
       height: 296,
-      alt: "Life on Edena"
+      alt: "Color dog"
     },
-    title: "Life on Edena",
+    title: "Color dog",
     owner: {
       avatar: {
         url: "/assets/images/vector/nft-avatar-nebula-kid.svg",
@@ -550,12 +551,81 @@ export const NFT_CARDS: NftCard[] = [
     id: "6",
     href: "#",
     image: {
-      url: "/assets/images/raster/nft-astro-fiction.png",
+      url: "/assets/images/raster/nft-space-tales.png",
       width: 420,
       height: 296,
-      alt: "AstroFiction"
+      alt: "Space tales"
     },
-    title: "AstroFiction",
+    title: "Space tales",
+    owner: {
+      avatar: {
+        url: "/assets/images/vector/nft-avatar-spaceone.svg",
+        width: 24,
+        height: 24,
+        alt: "Spaceone avatar"
+      },
+      name: "Spaceone ",
+    },
+    price: 1.63,
+    highestBid: 0.33
+  },
+
+  {
+    id: "7",
+    href: "#",
+    image: {
+      url: "/assets/images/raster/nft-space-cherry.png",
+      width: 420,
+      height: 296,
+      alt: "Space cherry"
+    },
+    title: "Space cherry",
+    owner: {
+      avatar: {
+        url: "/assets/images/vector/nft-avatar-spaceone.svg",
+        width: 24,
+        height: 24,
+        alt: "Spaceone avatar"
+      },
+      name: "Spaceone ",
+    },
+    price: 1.63,
+    highestBid: 0.33
+  },
+
+  {
+    id: "8",
+    href: "#",
+    image: {
+      url: "/assets/images/raster/nft-dancing-robots.png",
+      width: 420,
+      height: 296,
+      alt: "Dancing robots"
+    },
+    title: "Dancing robots",
+    owner: {
+      avatar: {
+        url: "/assets/images/vector/nft-avatar-spaceone.svg",
+        width: 24,
+        height: 24,
+        alt: "Spaceone avatar"
+      },
+      name: "Spaceone ",
+    },
+    price: 1.63,
+    highestBid: 0.33
+  },
+
+  {
+    id: "9",
+    href: "#",
+    image: {
+      url: "/assets/images/raster/nft-ice-cream-age.png",
+      width: 420,
+      height: 296,
+      alt: "Ice cream age"
+    },
+    title: "Ice cream age",
     owner: {
       avatar: {
         url: "/assets/images/vector/nft-avatar-spaceone.svg",
