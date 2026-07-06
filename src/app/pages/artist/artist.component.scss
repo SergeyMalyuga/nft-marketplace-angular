@@ -1,0 +1,141 @@
+@use '../../../styles/variables' as variables;
+@use '../../../styles/mixins/button' as mixins;
+
+.artist {
+  &__cover {
+    position: relative;
+    width: 100%;
+    padding-bottom: 50px;
+  }
+
+  &__wrapper {
+    &-image {
+      display: block;
+      max-width: 1280px;
+      width: 100%;
+
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    &-cover {
+      padding: 0;
+    }
+  }
+
+  &__avatar {
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 115px;
+
+    @media (width <= 934px) {
+      left: 72px;
+    }
+
+    @media (width <= 768px) {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__info {
+    padding: 40px 0;
+
+    @media (width <= 934px) {
+      padding: 30px 0;
+    }
+  }
+
+  &__top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    margin-bottom: 0;
+  }
+
+  &__button {
+    &-cta {
+      display: flex;
+      gap: 20px;
+    }
+
+    &-copy {
+      @include mixins.button-base($width: 186px);
+    }
+
+    &-follow {
+      @include mixins.button-base($width: 145px);
+
+      background-color: transparent;
+      border: 2px solid variables.$button-border-color;
+      padding: 17px 0;
+    }
+  }
+
+  &__list {
+    &-stats {
+      display: flex;
+      max-width: 510px;
+      width: 100%;
+      gap: 30px;
+      margin-bottom: 30px;
+    }
+
+    &-socials {
+      display: flex;
+      gap: 10px;
+    }
+
+    &-nft-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+  }
+
+  &__block:not(:last-of-type) {
+    margin-bottom: 30px;
+  }
+
+  &__link {
+    &-social {
+      display: block;
+      width: 32px;
+      height: 32px;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(0.90);
+      }
+    }
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__subtitle {
+    color: variables.$subtitle-text-color;
+  }
+
+  &__gallery {
+    padding-bottom: 80px;
+
+    &-filter {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      margin-bottom: 80px;
+    }
+  }
+}
