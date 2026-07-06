@@ -15,5 +15,10 @@ export const routes: Routes = [{
     path: AppRoute.WALLET,
     title: 'Wallet',
     loadComponent: () => import('./pages/wallet/wallet.component').then(m => m.WalletComponent),
+  },
+  {
+    path: `${AppRoute.ARTIST}/:id`,
+    title: 'Artist',
+    loadComponent: () => import('./pages/artist/artist.component').then(m => m.ArtistComponent),
   }
 ];
