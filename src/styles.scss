@@ -103,6 +103,67 @@ body {
   }
 }
 
+.item {
+  &-stats {
+    width: calc((100% - (30px * 2)) / 3);
+
+    span {
+      display: block;
+    }
+
+    span:first-of-type {
+      font-family: variables.$font-family-secondary;
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 140%;
+
+      @media (width <= 930px) {
+        font-size: 22px;
+        line-height: 160%;
+      }
+    }
+
+    span:last-of-type {
+      font-size: 24px;
+      text-transform: capitalize;
+
+      @media (width <= 930px) {
+        font-size: 16px;
+        line-height: 140%;
+      }
+    }
+  }
+}
+
+.button {
+  background-color: transparent;
+  border: 2px solid transparent;
+  color: variables.$button-filter-main;
+  cursor: pointer;
+
+  &--filter {
+    max-width: 320px;
+    width: 100%;
+    padding: 15px;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 140%;
+    text-align: center;
+    text-transform: capitalize;
+    transition: color 0.3s ease, border-bottom-color 0.3s ease;
+
+    &:hover {
+      color: variables.$button-filter-active;
+      border-bottom: variables.$button-filter-border;
+    }
+
+    &.active {
+      color: variables.$button-filter-active;
+      border-bottom: variables.$button-filter-border;
+    }
+  }
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
