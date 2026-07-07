@@ -20,5 +20,10 @@ export const routes: Routes = [{
     path: `${AppRoute.ARTIST}/:id`,
     title: 'Artist',
     loadComponent: () => import('./pages/artist/artist.component').then(m => m.ArtistComponent),
+  },
+  {
+    path: AppRoute.MARKETPLACE,
+    title: 'Marketplace',
+    loadComponent: () => import('./pages/marketplace/marketplace.component').then(m => m.MarketplaceComponent),
   }
 ];
