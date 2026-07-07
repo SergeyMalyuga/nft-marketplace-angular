@@ -9,6 +9,7 @@ export enum AppRoute {
   LOGIN = 'login',
   WALLET = 'wallet',
   ARTIST = 'artist',
+  MARKETPLACE = 'marketplace',
 }
 
 export const TREND_CARDS: TrendCard[] = [
