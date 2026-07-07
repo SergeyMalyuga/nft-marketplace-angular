@@ -1,5 +1,5 @@
 <article class="creator-card">
-  <a class="creator-card__link" [href]="card.href" target="_blank"
+  <a class="creator-card__link" [routerLink]="[AppRoute.ARTIST, 1]" target="_blank"
      rel="noopener noreferrer">
     <div class="creator-card__rank">{{ card.rank }}</div>
     <img class="creator-card__image" [ngSrc]="card.image.url"
