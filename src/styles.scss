@@ -88,6 +88,11 @@ body {
     font-size: 38px;
     line-height: 120%;
   }
+
+  @media (width <= 768px) {
+    font-size: 28px;
+    line-height: 140%;
+  }
 }
 
 .text {
