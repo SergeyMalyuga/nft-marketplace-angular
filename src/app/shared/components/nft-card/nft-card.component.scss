@@ -17,6 +17,10 @@
     &:hover {
       transform: scale(0.95);
     }
+
+    &.artist-page {
+      background-color: variables.$bg-main;
+    }
   }
 
   &__title {
@@ -84,5 +88,9 @@
 
   &__title-info {
     margin-bottom: 8px;
+  }
+
+  @media (width <= 1052px) {
+    max-width: 100%;
   }
 }

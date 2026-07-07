@@ -16,5 +16,6 @@ import {AppRoute} from '../../../core/constants/const';
 })
 export class NftCardComponent {
   @Input({required: true}) card!: NftCard;
+  @Input() isArtistPage = false;
   protected readonly AppRoute = AppRoute;
 }
