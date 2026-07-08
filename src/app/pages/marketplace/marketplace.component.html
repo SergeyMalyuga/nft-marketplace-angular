@@ -15,8 +15,18 @@
     <section class="marketplace__gallery">
       <div class="container">
         <div class="marketplace__gallery-filter">
-          <button class="marketplace__button button button--filter" type="button">NFTs</button>
-          <button class="marketplace__button button button--filter" type="button">Collections</button>
+          <button class="marketplace__button button button--filter active" type="button">NFTs <span>302</span></button>
+          <button class="marketplace__button button button--filter" type="button">Collections <span>67</span></button>
+        </div>
+      </div>
+
+      <div class="marketplace__wrapper-list">
+        <div class="container">
+          <ul class="marketplace__list-nft-cards">
+            @for (card of NFT_CARDS; track card.id) {
+              <app-nft-card [card]="card" [isCustomPage]="true"/>
+            }
+          </ul>
         </div>
       </div>
     </section>
