@@ -10,6 +10,7 @@ export enum AppRoute {
   WALLET = 'wallet',
   ARTIST = 'artist',
   MARKETPLACE = 'marketplace',
+  RANKING = 'ranking',
 }
 
 export const TREND_CARDS: TrendCard[] = [

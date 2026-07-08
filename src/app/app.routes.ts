@@ -25,5 +25,10 @@ export const routes: Routes = [{
     path: AppRoute.MARKETPLACE,
     title: 'Marketplace',
     loadComponent: () => import('./pages/marketplace/marketplace.component').then(m => m.MarketplaceComponent),
+  },
+  {
+    path: AppRoute.RANKING,
+    title: 'Ranking',
+    loadComponent: () => import('./pages/ranking/ranking').then(m => m.Ranking)
   }
 ];
