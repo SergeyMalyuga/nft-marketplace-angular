@@ -20,6 +20,31 @@
             </button>
           }
         </div>
+        <div class="ranking__table" role="table" aria-label="Рейтинг авторов">
+          <div class="ranking__header" role="row">
+            <span class="ranking__cell ranking__cell--number" role="columnheader">#</span>
+            <span class="ranking__cell ranking__cell--artist" role="columnheader">Artist</span>
+            <span class="ranking__cell ranking__cell--change" role="columnheader">Change</span>
+            <span class="ranking__cell ranking__cell--sold" role="columnheader">NFTs Sold</span>
+            <span class="ranking__cell ranking__cell--volume" role="columnheader">Volume</span>
+          </div>
+          <ul class="ranking__body">
+            <li class="ranking__row" role="row">
+              <span class="ranking__cell ranking__cell--number" role="cell">1</span>
+              <div class="ranking__cell ranking__cell--artist" role="cell">
+                <picture class="ranking__wrapper-avatar">
+                  <source srcset="/assets/images/vector/creator-avatar-1-mobile.svg" media="(max-width: 934px)">
+                  <img class="ranking__avatar" src="/assets/images/vector/creator-avatar-1-desktop.svg" width="60"
+                       height="60" alt="Creator Anna"/>
+                </picture>
+                <span>Jaydon Ekstrom</span>
+              </div>
+              <span class="ranking__cell ranking__cell--change">+1.41%</span>
+              <span class="ranking__cell ranking__cell--sold">602</span>
+              <span class="ranking__cell ranking__cell--volume">12.4 ETH</span>
+            </li>
+          </ul>
+        </div>
       </section>
     </div>
   </main>

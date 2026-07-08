@@ -29,4 +29,142 @@
       padding: 5px;
     }
   }
+
+  &__table {
+    padding: 40px 0;
+  }
+
+  &__header {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 12px 20px;
+    border: variables.$header-cell-border;
+    border-radius: 20px;
+    margin-bottom: 20px;
+
+    @media (width <= 1235px) {
+      gap: 0;
+    }
+
+    @media (width <= 768px) {
+      padding: 12px 10px;
+    }
+  }
+
+  &__cell {
+    display: block;
+    max-width: 160px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 140%;
+    color: variables.$text-main;
+
+    @media (width <= 1235px) {
+      max-width: 100px;
+
+      &:not(:last-of-type) {
+        margin-right: 20px;
+      }
+    }
+
+    @media (width <= 530px) {
+      max-width: 80px;
+
+      &:not(:last-of-type) {
+        margin-right: 10px;
+      }
+    }
+
+    &--number {
+      max-width: 30px;
+      width: 100%;
+      text-align: center;
+    }
+
+    &--artist {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      max-width: 420px;
+      width: 100%;
+
+      span {
+        font-size: 22px;
+        font-weight: 600;
+        text-transform: capitalize;
+
+        @media (width <= 830px) {
+          font-size: 16px;
+          font-weight: 400;
+        }
+      }
+
+      @media (width <= 1235px) {
+        max-width: 100%;
+        flex-grow: 1;
+      }
+
+      @media (width <= 934px) {
+        gap: 12px;
+      }
+    }
+
+    &--change {
+      color: variables.$text-accent-green;
+
+      @media (width <= 830px) {
+        display: none;
+      }
+    }
+
+    &--sold {
+      @media (width <= 1235px) {
+        display: none;
+      }
+    }
+
+    &--volume, &--artist {
+      @media (width <= 830px) {
+        font-size: 12px;
+        line-height: 110%;
+      }
+    }
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 12px 20px;
+    background-color: variables.$bg-accent;
+    border-radius: 20px;
+    margin-bottom: 20px;
+
+    @media (width <= 1235px) {
+      gap: 0;
+    }
+
+    @media (width <= 768px) {
+      padding: 12px 10px;
+    }
+  }
+
+  &__wrapper {
+    &-avatar {
+      display: block;
+      max-width: 60px;
+      width: 100%;
+
+      @media (width <= 934px) {
+        max-width: 24px;
+      }
+    }
+  }
+
+  &__avatar {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
 }
