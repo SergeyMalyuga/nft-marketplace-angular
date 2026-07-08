@@ -1,7 +1,27 @@
 <div class="ranking">
   <app-header/>
   <main>
+    <div class="container">
+      <section class="ranking__hero">
+        <h2 class="title">Top Creators</h2>
+        <p class="ranking__text text">Check out top ranking NFT artists on the NFT Marketplace.</p>
+      </section>
 
+      <section class="ranking__info">
+        <div class="ranking__filter">
+          @for (filter of filtersText(); track filter.id) {
+            <button (click)="changeFilter(filter.type)"
+                    [ngClass]="{
+                    'ranking__button': true,
+                    'button': true,
+                    'button--filter': true,
+                    'active': filter.type === currentFilter()
+                    }">{{ filter.label }}
+            </button>
+          }
+        </div>
+      </section>
+    </div>
   </main>
   <app-footer/>
 </div>
