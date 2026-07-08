@@ -1,13 +1,11 @@
 import {ChangeDetectionStrategy, Component, Input} from '@angular/core';
 import {NftCard} from '../../../core/models/nft-card.model';
-import {NgOptimizedImage} from '@angular/common';
 import {RouterLink} from '@angular/router';
 import {AppRoute} from '../../../core/constants/const';
 
 @Component({
   selector: 'app-nft-card',
   imports: [
-    NgOptimizedImage,
     RouterLink
   ],
   templateUrl: './nft-card.component.html',
@@ -16,6 +14,6 @@ import {AppRoute} from '../../../core/constants/const';
 })
 export class NftCardComponent {
   @Input({required: true}) card!: NftCard;
-  @Input() isArtistPage = false;
+  @Input() isCustomPage = false;
   protected readonly AppRoute = AppRoute;
 }

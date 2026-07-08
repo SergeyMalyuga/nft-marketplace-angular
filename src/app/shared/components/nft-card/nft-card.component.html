@@ -1,7 +1,7 @@
 <article class="nft-card">
-  <a class="nft-card__link" [class.artist-page]="isArtistPage" [routerLink]="[AppRoute.ARTIST, 1]">
+  <a class="nft-card__link" [class.artist-page]="isCustomPage" [routerLink]="['/', AppRoute.ARTIST, 1]">
     <img class="nft-card__image"
-         [ngSrc]="card.image.url"
+         [src]="card.image.url"
          [width]="card.image.width"
          [height]="card.image.height"
          [alt]="card.image.alt"
@@ -10,7 +10,7 @@
       <h3 class="nft-card__title-main">{{ card.title }}</h3>
       <div class="nft-card__wrapper-user">
         <img class="nft-card__avatar"
-             [ngSrc]="card.owner.avatar.url"
+             [src]="card.owner.avatar.url"
              [width]="card.owner.avatar.width"
              [height]="card.owner.avatar.height"
              [alt]="card.owner.avatar.alt"
