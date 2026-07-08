@@ -13,6 +13,13 @@ export enum AppRoute {
   RANKING = 'ranking',
 }
 
+export enum Filter {
+  TODAY = 'Today',
+  THIS_WEEK = 'This Week',
+  THIS_MONTH = 'This Month',
+  ALL_TIME = 'All Time',
+}
+
 export const TREND_CARDS: TrendCard[] = [
   {
     id: '1',
