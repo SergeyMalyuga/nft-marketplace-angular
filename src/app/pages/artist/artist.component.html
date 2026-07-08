@@ -13,8 +13,6 @@
              alt="Armando avatar"/>
       </section>
     </div>
-
-
         <section class="artist__info">
           <div class="container">
           <div class="artist__top-bar">
@@ -106,21 +104,20 @@
         <section class="artist__gallery">
           <div class="container">
             <div class="artist__gallery-filter">
-              <button class="artist__button button button--filter active" type="button">Created <span></span></button>
-              <button class="artist__button button button button--filter" type="button">Owned <span></span></button>
-              <button class="artist__button button button button--filter" type="button">Collection <span></span></button>
+              <button class="artist__button button button--filter active" type="button">Created <span>302</span></button>
+              <button class="artist__button button button button--filter" type="button">Owned <span>67</span></button>
+              <button class="artist__button button button button--filter" type="button">Collection <span>4</span></button>
             </div>
             </div>
 <div class="artist__wrapper-list">
   <div class="container">
     <ul class="artist__list-nft-cards" aria-label="NFT collections">
       @for (card of NFT_CARDS; track card.id) {
-        <app-nft-card [isArtistPage]="true" [card]="card"/>
+        <app-nft-card [isCustomPage]="true" [card]="card"/>
       }
     </ul>
   </div>
 </div>
-
         </section>
 
   </main>
