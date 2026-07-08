@@ -5,6 +5,7 @@
 /* base */
 $white: rgb(255 255 255);
 $black: rgb(0 0 0);
+$green: rgb(0 172 79);
 
 /* gray */
 $gray-200: rgb(204 204 204);
@@ -25,6 +26,7 @@ $text-main: $white;
 $text-accent: $gray-300;
 $text-accent-dark: $gray-500;
 $text-accent-light: $gray-200;
+$text-accent-green: $green;
 
 /* subtitle */
 $subtitle-text-color: $gray-300;
@@ -68,6 +70,9 @@ $input-text-color: $gray-500;
 
 /* input-search */
 $input-search-border: 1px solid $gray-400;
+
+/* header-cell */
+$header-cell-border: 1px solid $gray-300;
 
 // ==== TYPOGRAPHY ==== //
 $font-family-primary: 'Work Sans', sans-serif;
