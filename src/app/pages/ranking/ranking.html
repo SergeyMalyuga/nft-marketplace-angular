@@ -3,7 +3,7 @@
   <main>
     <div class="container">
       <section class="ranking__hero">
-        <h2 class="title">Top Creators</h2>
+        <h1 class="title">Top Creators</h1>
         <p class="ranking__text text">Check out top ranking NFT artists on the NFT Marketplace.</p>
       </section>
 
@@ -29,20 +29,22 @@
             <span class="ranking__cell ranking__cell--volume" role="columnheader">Volume</span>
           </div>
           <ul class="ranking__body">
-            <li class="ranking__row" role="row">
-              <span class="ranking__cell ranking__cell--number" role="cell">1</span>
-              <div class="ranking__cell ranking__cell--artist" role="cell">
-                <picture class="ranking__wrapper-avatar">
-                  <source srcset="/assets/images/vector/creator-avatar-1-mobile.svg" media="(max-width: 934px)">
-                  <img class="ranking__avatar" src="/assets/images/vector/creator-avatar-1-desktop.svg" width="60"
-                       height="60" alt="Creator Anna"/>
-                </picture>
-                <span>Jaydon Ekstrom</span>
-              </div>
-              <span class="ranking__cell ranking__cell--change">+1.41%</span>
-              <span class="ranking__cell ranking__cell--sold">602</span>
-              <span class="ranking__cell ranking__cell--volume">12.4 ETH</span>
-            </li>
+            @for (row of MOCK_RANKING_DATA; track row.id) {
+              <li class="ranking__row" role="row">
+                <span class="ranking__cell ranking__cell--number" role="cell">{{ row.rank }}</span>
+                <div class="ranking__cell ranking__cell--artist" role="cell">
+                  <div class="ranking__wrapper-avatar">
+                    <img class="ranking__avatar" src="{{row.image}}" width="60"
+                         height="60" alt="Creator {{ row.name }}"/>
+                  </div>
+                  <span>{{ row.name }}</span>
+                </div>
+                <span class="ranking__cell ranking__cell--change">+{{ row.change }}%</span>
+                <span class="ranking__cell ranking__cell--sold">{{ row.sold }}</span>
+                <span class="ranking__cell ranking__cell--volume">{{ row.volume }} ETH</span>
+              </li>
+
+            }
           </ul>
         </div>
       </section>

@@ -5,6 +5,7 @@ import {ScreenService} from '../../core/services/screen.service';
 import {RankingFilter} from '../../core/models/ranking-filter.model';
 import {NgClass} from '@angular/common';
 import {Filter} from '../../core/constants/const';
+import {MOCK_RANKING_DATA} from './mocks/ranking.mock';
 
 @Component({
   selector: 'app-ranking',
@@ -46,4 +47,6 @@ export class Ranking {
   public changeFilter(filter: Filter) {
     this.currentFilter.set(filter);
   }
+
+  protected readonly MOCK_RANKING_DATA = MOCK_RANKING_DATA;
 }
