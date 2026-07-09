@@ -1,5 +1,5 @@
-import {RankingRow} from '../../../core/models/ranking-row.model';
-import {nanoid} from 'nanoid';
+import { RankingRow } from '../../../core/models/ranking-row.model';
+import { nanoid } from 'nanoid';
 
 export const MOCK_RANKING_DATA: RankingRow[] = [
   {
@@ -9,7 +9,7 @@ export const MOCK_RANKING_DATA: RankingRow[] = [
     name: 'Jaydon Ekstrom',
     change: 1.41,
     sold: 602,
-    volume: 12.4
+    volume: 12.4,
   },
   {
     id: nanoid(),
@@ -18,7 +18,7 @@ export const MOCK_RANKING_DATA: RankingRow[] = [
     name: 'Ruben Carder',
     change: 1.41,
     sold: 602,
-    volume: 12.4
+    volume: 12.4,
   },
   {
     id: nanoid(),
@@ -27,7 +27,7 @@ export const MOCK_RANKING_DATA: RankingRow[] = [
     name: 'Alfredo Septimus',
     change: 1.41,
     sold: 602,
-    volume: 12.4
+    volume: 12.4,
   },
   {
     id: nanoid(),
@@ -36,7 +36,7 @@ export const MOCK_RANKING_DATA: RankingRow[] = [
     name: 'Davis Franci',
     change: 1.41,
     sold: 602,
-    volume: 12.4
+    volume: 12.4,
   },
   {
     id: nanoid(),
@@ -45,7 +45,7 @@ export const MOCK_RANKING_DATA: RankingRow[] = [
     name: 'Livia Rosser',
     change: 1.41,
     sold: 602,
-    volume: 12.4
+    volume: 12.4,
   },
   {
     id: nanoid(),
@@ -54,7 +54,7 @@ export const MOCK_RANKING_DATA: RankingRow[] = [
     name: 'Kianna Donin',
     change: 1.41,
     sold: 602,
-    volume: 12.4
+    volume: 12.4,
   },
   {
     id: nanoid(),
@@ -63,7 +63,7 @@ export const MOCK_RANKING_DATA: RankingRow[] = [
     name: 'Maria Rosser',
     change: 1.41,
     sold: 602,
-    volume: 12.4
+    volume: 12.4,
   },
   {
     id: nanoid(),
@@ -72,7 +72,7 @@ export const MOCK_RANKING_DATA: RankingRow[] = [
     name: 'Kianna Stanton',
     change: 1.41,
     sold: 602,
-    volume: 12.4
+    volume: 12.4,
   },
   {
     id: nanoid(),
@@ -81,6 +81,6 @@ export const MOCK_RANKING_DATA: RankingRow[] = [
     name: 'Angel Lubin',
     change: 1.41,
     sold: 602,
-    volume: 12.4
+    volume: 12.4,
   },
 ];

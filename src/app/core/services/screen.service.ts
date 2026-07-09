@@ -1,8 +1,8 @@
-import {Inject, Injectable, OnDestroy, PLATFORM_ID, signal} from '@angular/core';
-import {isPlatformBrowser} from '@angular/common';
+import { Inject, Injectable, OnDestroy, PLATFORM_ID, signal } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ScreenService implements OnDestroy {
   private tabletQuery?: MediaQueryList;
@@ -13,11 +13,11 @@ export class ScreenService implements OnDestroy {
 
   constructor(@Inject(PLATFORM_ID) private platform: object) {
     if (isPlatformBrowser(platform)) {
-      this.tabletQuery = window.matchMedia("(max-width: 929px)");
+      this.tabletQuery = window.matchMedia('(max-width: 929px)');
       this.isTablet.set(this.tabletQuery.matches);
-      this.tabletQuery.addEventListener('change', this.onTabletChange)
+      this.tabletQuery.addEventListener('change', this.onTabletChange);
 
-      this.mobileQuery = window.matchMedia("(max-width: 768px)");
+      this.mobileQuery = window.matchMedia('(max-width: 768px)');
       this.isMobile.set(this.mobileQuery.matches);
       this.mobileQuery.addEventListener('change', this.onMobileChange);
     }
@@ -25,11 +25,11 @@ export class ScreenService implements OnDestroy {
 
   private onTabletChange = (evt: MediaQueryListEvent) => {
     this.isTablet.set(evt.matches);
-  }
+  };
 
   private onMobileChange = (evt: MediaQueryListEvent) => {
     this.isMobile.set(evt.matches);
-  }
+  };
 
   ngOnDestroy(): void {
     this.tabletQuery?.removeEventListener('change', this.onTabletChange);

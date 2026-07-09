@@ -124,7 +124,8 @@
       }
     }
 
-    &--volume, &--artist {
+    &--volume,
+    &--artist {
       @media (width <= 830px) {
         font-size: 12px;
         line-height: 110%;

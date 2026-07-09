@@ -1,17 +1,15 @@
-import {ChangeDetectionStrategy, Component, effect, inject, signal} from '@angular/core';
-import {BodyService} from '../../../core/services/body.service';
-import {ScreenService} from '../../../core/services/screen.service';
-import {RouterLink} from '@angular/router';
-import {AppRoute} from '../../../core/constants/const';
+import { ChangeDetectionStrategy, Component, effect, inject, signal } from '@angular/core';
+import { BodyService } from '../../../core/services/body.service';
+import { ScreenService } from '../../../core/services/screen.service';
+import { RouterLink } from '@angular/router';
+import { AppRoute } from '../../../core/constants/const';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.components.html',
   styleUrl: './header.components.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [
-    RouterLink
-  ]
+  imports: [RouterLink],
 })
 export class HeaderComponents {
   private bodyService = inject(BodyService);

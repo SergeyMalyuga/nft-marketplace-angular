@@ -1,4 +1,4 @@
-@use "sass:color";
+@use 'sass:color';
 
 // ==== COLOR ==== //
 
@@ -57,7 +57,7 @@ $burger-line-bg: $violet;
 
 /* overlay */
 $overlay-bg: color.scale($black, $alpha: -70%);
-$overlay-bg-violet: linear-gradient(180.00deg, rgb(162 89 255 / 0%) 0%, rgb(162 89 255) 100%);
+$overlay-bg-violet: linear-gradient(180deg, rgb(162 89 255 / 0%) 0%, rgb(162 89 255) 100%);
 
 /* timer */
 $timer-bg: color.scale($gray-400, $alpha: -50%);

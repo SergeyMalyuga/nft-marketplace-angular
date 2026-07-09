@@ -1,13 +1,21 @@
 @use './styles/variables' as variables;
 @use './styles/fonts';
-@use "swiper/swiper";
-@use "swiper/modules/pagination";
+@use 'swiper/swiper';
+@use 'swiper/modules/pagination';
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
 }
 
@@ -160,7 +168,9 @@ body {
     line-height: 140%;
     text-align: center;
     text-transform: capitalize;
-    transition: color 0.3s ease, border-bottom-color 0.3s ease;
+    transition:
+      color 0.3s ease,
+      border-bottom-color 0.3s ease;
 
     &:hover {
       color: variables.$button-filter-active;

@@ -1,5 +1,5 @@
-import {Image} from './image.model';
-import {Owner} from './owner.model';
+import { Image } from './image.model';
+import { Owner } from './owner.model';
 
 export interface NftCard {
   id: string;

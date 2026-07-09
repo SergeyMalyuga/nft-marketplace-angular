@@ -12,7 +12,6 @@
       font-weight: 600;
       line-height: 79px;
 
-
       @media (width <= 930px) {
         font-size: 38px;
         line-height: 120%;
@@ -67,14 +66,15 @@
     width: calc((100% - 30px) / 2);
   }
 
-    &__info, &__image {
-      @media (width <= 752px) {
-        width: 80%;
-      }
+  &__info,
+  &__image {
+    @media (width <= 752px) {
+      width: 80%;
+    }
 
-      @media (width <= 571px) {
-        width: 100%;
-      }
+    @media (width <= 571px) {
+      width: 100%;
+    }
   }
 
   &__card {
@@ -107,7 +107,7 @@
       display: block;
       width: 24px;
       height: 24px;
-      background-image: url("/assets/images/vector/hero-avatar.svg");
+      background-image: url('/assets/images/vector/hero-avatar.svg');
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;

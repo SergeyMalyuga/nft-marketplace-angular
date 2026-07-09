@@ -1,11 +1,9 @@
 <header class="header" role="banner">
   <div class="header__content">
     <a class="header__link header__link--logo" [routerLink]="[AppRoute.MAIN]">
-      <img src="/assets/images/vector/logo.svg" width="243" height="32" alt="Логотип компании">
+      <img src="/assets/images/vector/logo.svg" width="243" height="32" alt="Логотип компании" />
     </a>
-    <div class="header__wrapper-nav"
-         [class.header__wrapper-nav--open]="isNavMenuOpen()"
-    >
+    <div class="header__wrapper-nav" [class.header__wrapper-nav--open]="isNavMenuOpen()">
       <nav class="header__nav" aria-label="Основная навигация">
         <ul class="header__list-nav">
           <li class="header__item-nav">
@@ -27,9 +25,10 @@
       </nav>
       <a class="header__link-sign-in" [routerLink]="['/', AppRoute.LOGIN]">Sign Up</a>
     </div>
-    <button (click)="toggleNavMenu()"
-            class="header__button-burger"
-            [class.header__button-burger--open]="isNavMenuOpen()"
+    <button
+      (click)="toggleNavMenu()"
+      class="header__button-burger"
+      [class.header__button-burger--open]="isNavMenuOpen()"
     >
       <span class="header__line-middle"></span>
     </button>

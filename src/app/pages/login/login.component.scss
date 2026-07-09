@@ -74,19 +74,19 @@
 
       &--user {
         &::before {
-          background-image: url("/assets/images/vector/user-icon.svg");
+          background-image: url('/assets/images/vector/user-icon.svg');
         }
       }
 
       &--email-login {
         &::before {
-          background-image: url("/assets/images/vector/envelope-simple-icon.svg");
+          background-image: url('/assets/images/vector/envelope-simple-icon.svg');
         }
       }
 
       &--password {
         &::before {
-          background-image: url("/assets/images/vector/lock-key-icon.svg");
+          background-image: url('/assets/images/vector/lock-key-icon.svg');
         }
       }
     }

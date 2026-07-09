@@ -1,23 +1,25 @@
 <article class="trend-card">
   <h3 class="trend-card__title">{{ card.title }}</h3>
   <a class="trend-card__link" href="#">
-    <img class="trend-card__image"
-         [ngSrc]="card.previewImage.url"
-         [width]="card.previewImage.width"
-         [height]="card.previewImage.height"
-         [alt]="card.previewImage.alt"
-         loading="lazy"
+    <img
+      class="trend-card__image"
+      [ngSrc]="card.previewImage.url"
+      [width]="card.previewImage.width"
+      [height]="card.previewImage.height"
+      [alt]="card.previewImage.alt"
+      loading="lazy"
     />
   </a>
   <ul class="trend-card__nfts" aria-label="NTFs collection">
     @for (image of card.images; track image.url) {
       <li>
         <a class="trend-card__link" href="#">
-          <img [ngSrc]="image.url"
-               [width]="image.width"
-               [height]="image.height"
-               [alt]="image.alt"
-               loading="lazy"
+          <img
+            [ngSrc]="image.url"
+            [width]="image.width"
+            [height]="image.height"
+            [alt]="image.alt"
+            loading="lazy"
           />
         </a>
       </li>
@@ -25,12 +27,13 @@
     <li><a class="trend-card__link trend-card__link--more-cards" href="#">1025+</a></li>
   </ul>
   <div class="trend-card__owner">
-    <img class="trend-card__avatar"
-         [ngSrc]="card.owner.avatar.url"
-         [width]="card.owner.avatar.width"
-         [height]="card.owner.avatar.height"
-         [alt]="card.owner.avatar.alt"
-         loading="lazy"
+    <img
+      class="trend-card__avatar"
+      [ngSrc]="card.owner.avatar.url"
+      [width]="card.owner.avatar.width"
+      [height]="card.owner.avatar.height"
+      [alt]="card.owner.avatar.alt"
+      loading="lazy"
     />
     <span class="trend-card__name">{{ card.owner.name }}</span>
   </div>

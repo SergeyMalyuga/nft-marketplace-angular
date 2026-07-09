@@ -1,5 +1,5 @@
-import {ChangeDetectionStrategy, Component, OnDestroy, OnInit, signal} from '@angular/core';
-import {create, ITimr} from 'timrjs';
+import { ChangeDetectionStrategy, Component, OnDestroy, OnInit, signal } from '@angular/core';
+import { create, ITimr } from 'timrjs';
 
 @Component({
   selector: 'app-timer',
@@ -16,7 +16,9 @@ export class TimerComponent implements OnInit, OnDestroy {
   public ngOnInit(): void {
     this.timer = create(this.formattedTime());
 
-    this.timer.ticker(({formattedTime}) => {this.formattedTime.set(formattedTime)});
+    this.timer.ticker(({ formattedTime }) => {
+      this.formattedTime.set(formattedTime);
+    });
     this.timer.start();
   }
 

@@ -3,16 +3,16 @@
 .about {
   padding-bottom: 120px;
 
-&__list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
 
-  @media (width <= 775px) {
-    display: flex;
-    flex-direction: column;
+    @media (width <= 775px) {
+      display: flex;
+      flex-direction: column;
+    }
   }
-}
 
   @media (width <= 930px) {
     padding-bottom: 60px;

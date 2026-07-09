@@ -1,16 +1,24 @@
 <article class="creator-card">
-  <a class="creator-card__link" [routerLink]="[AppRoute.ARTIST, 1]" target="_blank"
-     rel="noopener noreferrer">
+  <a
+    class="creator-card__link"
+    [routerLink]="[AppRoute.ARTIST, 1]"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
     <div class="creator-card__rank">{{ card.rank }}</div>
-    <img class="creator-card__image" [ngSrc]="card.image.url"
-         [width]="card.image.width"
-         [height]="card.image.height"
-         [alt]="card.image.alt"
-         loading="lazy"
+    <img
+      class="creator-card__image"
+      [ngSrc]="card.image.url"
+      [width]="card.image.width"
+      [height]="card.image.height"
+      [alt]="card.image.alt"
+      loading="lazy"
     />
     <div class="creator-card__info">
       <h3 class="creator-card__title">{{ card.name }}</h3>
-      <span class="creator-card__value"><span class="creator-card__label">Total sales:</span> {{ card.totalSales }} ETH</span>
+      <span class="creator-card__value"
+        ><span class="creator-card__label">Total sales:</span> {{ card.totalSales }} ETH</span
+      >
     </div>
   </a>
 </article>

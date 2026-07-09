@@ -1,4 +1,4 @@
-import {Filter} from '../constants/const';
+import { Filter } from '../constants/const';
 
 export interface RankingFilter {
   id: string;

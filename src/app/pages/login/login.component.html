@@ -1,35 +1,63 @@
 <div class="page-layout">
-  <app-header/>
+  <app-header />
   <main class="page-main">
     <section class="login">
       <div class="login__content container">
         <picture class="login__wrapper-image">
-          <source srcset="/assets/images/raster/login-decorate-mobile.jpg" media="(max-width: 870px)">
-          <img class="login__image"
-               src="/assets/images/raster/login-decorate.jpg" width="610" height="691" alt=""/>
+          <source
+            srcset="/assets/images/raster/login-decorate-mobile.jpg"
+            media="(max-width: 870px)"
+          />
+          <img
+            class="login__image"
+            src="/assets/images/raster/login-decorate.jpg"
+            width="610"
+            height="691"
+            alt=""
+          />
         </picture>
         <div class="login__wrapper-info">
           <h2 class="title">Create account</h2>
-          <p class="text">Welcome! enter your details and start creating, collecting and selling NFTs.</p>
+          <p class="text">
+            Welcome! enter your details and start creating, collecting and selling NFTs.
+          </p>
           <form class="login__form" aria-label="Создать новый аккаунт">
             <label for="name" class="visually-hidden">User name</label>
             <div class="login__wrapper-input login__wrapper-input--user">
-              <input id="name" class="login__input" type="text" required placeholder="User name"/>
+              <input id="name" class="login__input" type="text" required placeholder="User name" />
             </div>
 
             <label for="email-login" class="visually-hidden">Email address</label>
             <div class="login__wrapper-input login__wrapper-input--email-login">
-              <input id="email-login" class="login__input" type="email" required placeholder="Email address"/>
+              <input
+                id="email-login"
+                class="login__input"
+                type="email"
+                required
+                placeholder="Email address"
+              />
             </div>
 
             <label for="password" class="visually-hidden">Password</label>
             <div class="login__wrapper-input login__wrapper-input--password">
-              <input id="password" class="login__input" type="password" required placeholder="Password"/>
+              <input
+                id="password"
+                class="login__input"
+                type="password"
+                required
+                placeholder="Password"
+              />
             </div>
 
             <label for="confirm-password" class="visually-hidden">Confirm password</label>
             <div class="login__wrapper-input login__wrapper-input--password">
-            <input id="confirm-password" class="login__input" type="password" required placeholder="Confirm password"/>
+              <input
+                id="confirm-password"
+                class="login__input"
+                type="password"
+                required
+                placeholder="Confirm password"
+              />
             </div>
 
             <button class="login__button" type="submit">Create account</button>
@@ -38,6 +66,5 @@
       </div>
     </section>
   </main>
-  <app-footer/>
+  <app-footer />
 </div>
-

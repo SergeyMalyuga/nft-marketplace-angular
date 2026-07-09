@@ -92,19 +92,19 @@
 
     &--metamask {
       &::before {
-        background-image: url("/assets/images/vector/metamask-icon.svg");
+        background-image: url('/assets/images/vector/metamask-icon.svg');
       }
     }
 
     &--wallet-connect {
       &::before {
-        background-image: url("/assets/images/vector/wallet-connect-icon.svg");
+        background-image: url('/assets/images/vector/wallet-connect-icon.svg');
       }
     }
 
     &--coinbase {
       &::before {
-        background-image: url("/assets/images/vector/coinbase-icon.svg");
+        background-image: url('/assets/images/vector/coinbase-icon.svg');
       }
     }
   }
@@ -121,7 +121,7 @@
   }
 
   &__text {
-    max-width:460px;
+    max-width: 460px;
     width: 100%;
 
     @media (width <= 934px) {
@@ -129,5 +129,3 @@
     }
   }
 }
-
-

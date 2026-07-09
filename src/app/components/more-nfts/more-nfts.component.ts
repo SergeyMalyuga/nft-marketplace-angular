@@ -1,15 +1,12 @@
-import {ChangeDetectionStrategy, Component, signal} from '@angular/core';
-import {NFT_CARDS} from '../../core/constants/const';
-import {NftCardComponent} from '../../shared/components/nft-card/nft-card.component';
-import {SwiperComponents} from '../../shared/components/swiper/swiper.components';
-import {DEFAULT_COLLECTION_SWIPER} from '../../shared/config/swiper.config';
+import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
+import { NFT_CARDS } from '../../core/constants/const';
+import { NftCardComponent } from '../../shared/components/nft-card/nft-card.component';
+import { SwiperComponents } from '../../shared/components/swiper/swiper.components';
+import { DEFAULT_COLLECTION_SWIPER } from '../../shared/config/swiper.config';
 
 @Component({
   selector: 'app-more-nfts',
-  imports: [
-    NftCardComponent,
-    SwiperComponents
-  ],
+  imports: [NftCardComponent, SwiperComponents],
   templateUrl: './more-nfts.component.html',
   styleUrl: './more-nfts.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,

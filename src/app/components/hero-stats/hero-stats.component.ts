@@ -1,4 +1,4 @@
-import {ChangeDetectionStrategy, Component, Input} from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-hero-stats',
@@ -8,5 +8,5 @@ import {ChangeDetectionStrategy, Component, Input} from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HeroStatsComponent {
-  @Input({required: true}) isBottom!: boolean;
+  @Input({ required: true }) isBottom!: boolean;
 }

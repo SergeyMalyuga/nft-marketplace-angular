@@ -37,7 +37,8 @@
     text-decoration: none;
     color: variables.$text-accent-light;
 
-    &--logo, &--social {
+    &--logo,
+    &--social {
       display: block;
 
       img {
@@ -53,7 +54,7 @@
       transition: transform 0.3s ease;
 
       &:hover {
-        transform: scale(0.90);
+        transform: scale(0.9);
       }
     }
   }
@@ -88,7 +89,8 @@
     }
 
     @media (width <= 1090px) {
-      &--info, &--subscribe {
+      &--info,
+      &--subscribe {
         max-width: 100%;
       }
     }
@@ -99,7 +101,7 @@
     transition: transform 0.3s ease;
 
     &:hover {
-      transform: scale(0.90);
+      transform: scale(0.9);
     }
   }
 

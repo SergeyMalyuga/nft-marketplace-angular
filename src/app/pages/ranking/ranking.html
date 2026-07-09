@@ -1,5 +1,5 @@
 <div class="ranking">
-  <app-header/>
+  <app-header />
   <main>
     <div class="container">
       <section class="ranking__hero">
@@ -10,13 +10,16 @@
       <section class="ranking__info">
         <div class="ranking__filter">
           @for (filter of filtersText(); track filter.id) {
-            <button (click)="changeFilter(filter.type)"
-                    [ngClass]="{
-                    'ranking__button': true,
-                    'button': true,
-                    'button--filter': true,
-                    'active': filter.type === currentFilter()
-                    }">{{ filter.label }}
+            <button
+              (click)="changeFilter(filter.type)"
+              [ngClass]="{
+                ranking__button: true,
+                button: true,
+                'button--filter': true,
+                active: filter.type === currentFilter(),
+              }"
+            >
+              {{ filter.label }}
             </button>
           }
         </div>
@@ -34,8 +37,13 @@
                 <span class="ranking__cell ranking__cell--number" role="cell">{{ row.rank }}</span>
                 <div class="ranking__cell ranking__cell--artist" role="cell">
                   <div class="ranking__wrapper-avatar">
-                    <img class="ranking__avatar" src="{{row.image}}" width="60"
-                         height="60" alt="Creator {{ row.name }}"/>
+                    <img
+                      class="ranking__avatar"
+                      src="{{ row.image }}"
+                      width="60"
+                      height="60"
+                      alt="Creator {{ row.name }}"
+                    />
                   </div>
                   <span>{{ row.name }}</span>
                 </div>
@@ -43,12 +51,11 @@
                 <span class="ranking__cell ranking__cell--sold">{{ row.sold }}</span>
                 <span class="ranking__cell ranking__cell--volume">{{ row.volume }} ETH</span>
               </li>
-
             }
           </ul>
         </div>
       </section>
     </div>
   </main>
-  <app-footer/>
+  <app-footer />
 </div>

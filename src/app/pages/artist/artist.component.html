@@ -1,126 +1,147 @@
 <div class="atrist">
-  <app-header/>
+  <app-header />
   <main>
     <div class="artist__wrapper-cover container">
       <section class="artist__cover">
         <h2 class="visually-hidden">Обложка профиля</h2>
         <picture class="artist__wrapper-image">
-          <source srcset="/assets/images/raster/artist-cover-mobile.jpg" media="(max-width: 560px)"/>
-          <source srcset="/assets/images/raster/artis-cover-tablet.jpg" media="(max-width: 934px)"/>
-          <img src="/assets/images/raster/artist-cover-desktop.jpg" width="1280" height="320" alt=""/>
+          <source
+            srcset="/assets/images/raster/artist-cover-mobile.jpg"
+            media="(max-width: 560px)"
+          />
+          <source
+            srcset="/assets/images/raster/artis-cover-tablet.jpg"
+            media="(max-width: 934px)"
+          />
+          <img
+            src="/assets/images/raster/artist-cover-desktop.jpg"
+            width="1280"
+            height="320"
+            alt=""
+          />
         </picture>
-        <img class="artist__avatar" src="/assets/images/vector/artist-avatar.svg" width="120" height="120"
-             alt="Armando avatar"/>
+        <img
+          class="artist__avatar"
+          src="/assets/images/vector/artist-avatar.svg"
+          width="120"
+          height="120"
+          alt="Armando avatar"
+        />
       </section>
     </div>
-        <section class="artist__info">
-          <div class="container">
-          <div class="artist__top-bar">
-            <h2 class="artist__title title">Animakid</h2>
-            <div class="artist__button-cta">
-              <button class="artist__button-copy" type="button">0xc0E3...B79C</button>
-              <button class="artist__button-follow" type="button">Follow</button>
-            </div>
+    <section class="artist__info">
+      <div class="container">
+        <div class="artist__top-bar">
+          <h2 class="artist__title title">Animakid</h2>
+          <div class="artist__button-cta">
+            <button class="artist__button-copy" type="button">0xc0E3...B79C</button>
+            <button class="artist__button-follow" type="button">Follow</button>
           </div>
-          <ul class="artist__list-stats" aria-label="Artist statistics">
-            <li class="item-stats">
-              <span>250k+</span>
-              <span>Volume</span>
+        </div>
+        <ul class="artist__list-stats" aria-label="Artist statistics">
+          <li class="item-stats">
+            <span>250k+</span>
+            <span>Volume</span>
+          </li>
+          <li class="item-stats">
+            <span>50+</span>
+            <span>NFTs Sold</span>
+          </li>
+          <li class="item-stats">
+            <span>3000+</span>
+            <span>Followers</span>
+          </li>
+        </ul>
+        <div class="artist__block">
+          <h3 class="artist__subtitle">Bio</h3>
+          <p>The internet's friendliest designer kid.</p>
+        </div>
+        <div class="artist__block">
+          <h3 class="artist__subtitle">Links</h3>
+          <ul class="artist__list-socials">
+            <li>
+              <a class="artist__link-social" href="#" target="_blank" rel="noopener noreferrer">
+                <img
+                  ngSrc="/assets/images/vector/globe-icon.svg"
+                  width="32"
+                  height="32"
+                  alt="Discord"
+                  loading="lazy"
+                />
+              </a>
             </li>
-            <li class="item-stats">
-              <span>50+</span>
-              <span>NFTs Sold</span>
+            <li>
+              <a class="artist__link-social" href="#" target="_blank" rel="noopener noreferrer">
+                <img
+                  ngSrc="/assets/images/vector/discord-logo.svg"
+                  width="32"
+                  height="32"
+                  alt="Discord"
+                  loading="lazy"
+                />
+              </a>
             </li>
-            <li class="item-stats">
-              <span>3000+</span>
-              <span>Followers</span>
+            <li>
+              <a class="artist__link-social" href="#" target="_blank" rel="noopener noreferrer">
+                <img
+                  ngSrc="/assets/images/vector/youtube-logo.svg"
+                  width="32"
+                  height="32"
+                  alt="Youtube"
+                  loading="lazy"
+                />
+              </a>
+            </li>
+            <li>
+              <a class="artist__link-social" href="#" target="_blank" rel="noopener noreferrer">
+                <img
+                  ngSrc="/assets/images/vector/twitter-logo.svg"
+                  width="32"
+                  height="32"
+                  alt="Twitter"
+                  loading="lazy"
+                />
+              </a>
+            </li>
+            <li>
+              <a class="artist__link-social" href="#" target="_blank" rel="noopener noreferrer">
+                <img
+                  ngSrc="/assets/images/vector/instagram-logo.svg"
+                  width="32"
+                  height="32"
+                  alt="Instagram"
+                  loading="lazy"
+                />
+              </a>
             </li>
           </ul>
-          <div class="artist__block">
-            <h3 class="artist__subtitle">
-              Bio
-            </h3>
-            <p>The internet's friendliest designer kid.</p>
-          </div>
-          <div class="artist__block">
-            <h3 class="artist__subtitle">
-              Links
-            </h3>
-            <ul class="artist__list-socials">
-              <li>
-                <a class="artist__link-social" href="#" target="_blank" rel="noopener noreferrer">
-                  <img ngSrc="/assets/images/vector/globe-icon.svg"
-                       width="32"
-                       height="32"
-                       alt="Discord"
-                       loading="lazy"
-                  />
-                </a>
-              </li>
-              <li>
-                <a class="artist__link-social" href="#" target="_blank" rel="noopener noreferrer">
-                  <img ngSrc="/assets/images/vector/discord-logo.svg"
-                       width="32"
-                       height="32"
-                       alt="Discord"
-                       loading="lazy"
-                  />
-                </a>
-              </li>
-              <li>
-                <a class="artist__link-social" href="#" target="_blank" rel="noopener noreferrer">
-                  <img ngSrc="/assets/images/vector/youtube-logo.svg"
-                       width="32"
-                       height="32"
-                       alt="Youtube"
-                       loading="lazy"
-                  />
-                </a>
-              </li>
-              <li>
-                <a class="artist__link-social" href="#" target="_blank" rel="noopener noreferrer">
-                  <img ngSrc="/assets/images/vector/twitter-logo.svg"
-                       width="32"
-                       height="32"
-                       alt="Twitter"
-                       loading="lazy"
-                  />
-                </a>
-              </li>
-              <li>
-                <a class="artist__link-social" href="#" target="_blank" rel="noopener noreferrer">
-                  <img ngSrc="/assets/images/vector/instagram-logo.svg"
-                       width="32"
-                       height="32"
-                       alt="Instagram"
-                       loading="lazy"
-                  />
-                </a>
-              </li>
-            </ul>
-          </div>
-          </div>
-        </section>
-        <section class="artist__gallery">
-          <div class="container">
-            <div class="artist__gallery-filter">
-              <button class="artist__button button button--filter active" type="button">Created <span>302</span></button>
-              <button class="artist__button button button button--filter" type="button">Owned <span>67</span></button>
-              <button class="artist__button button button button--filter" type="button">Collection <span>4</span></button>
-            </div>
-            </div>
-<div class="artist__wrapper-list">
-  <div class="container">
-    <ul class="artist__list-nft-cards" aria-label="NFT collections">
-      @for (card of NFT_CARDS; track card.id) {
-        <app-nft-card [isCustomPage]="true" [card]="card"/>
-      }
-    </ul>
-  </div>
-</div>
-        </section>
-
+        </div>
+      </div>
+    </section>
+    <section class="artist__gallery">
+      <div class="container">
+        <div class="artist__gallery-filter">
+          <button class="artist__button button button--filter active" type="button">
+            Created <span>302</span>
+          </button>
+          <button class="artist__button button button button--filter" type="button">
+            Owned <span>67</span>
+          </button>
+          <button class="artist__button button button button--filter" type="button">
+            Collection <span>4</span>
+          </button>
+        </div>
+      </div>
+      <div class="artist__wrapper-list">
+        <div class="container">
+          <ul class="artist__list-nft-cards" aria-label="NFT collections">
+            @for (card of NFT_CARDS; track card.id) {
+              <app-nft-card [isCustomPage]="true" [card]="card" />
+            }
+          </ul>
+        </div>
+      </div>
+    </section>
   </main>
-  <app-footer/>
+  <app-footer />
 </div>
-

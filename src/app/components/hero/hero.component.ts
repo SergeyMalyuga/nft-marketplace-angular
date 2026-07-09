@@ -1,11 +1,9 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import {HeroStatsComponent} from '../hero-stats/hero-stats.component';
+import { HeroStatsComponent } from '../hero-stats/hero-stats.component';
 
 @Component({
   selector: 'app-hero',
-  imports: [
-    HeroStatsComponent
-  ],
+  imports: [HeroStatsComponent],
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,

@@ -1,7 +1,7 @@
-import {AfterViewInit, ChangeDetectionStrategy, Component, input, Input, OnDestroy} from '@angular/core';
+import { AfterViewInit, ChangeDetectionStrategy, Component, Input, OnDestroy } from '@angular/core';
 import Swiper from 'swiper';
-import {Pagination} from 'swiper/modules';
-import {SwiperOptions} from 'swiper/types';
+import { Pagination } from 'swiper/modules';
+import { SwiperOptions } from 'swiper/types';
 
 @Component({
   selector: 'app-swiper',
@@ -11,8 +11,8 @@ import {SwiperOptions} from 'swiper/types';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SwiperComponents implements AfterViewInit, OnDestroy {
-  @Input({required: true}) options!: SwiperOptions;
-  @Input({required: true}) swiperClass!: string;
+  @Input({ required: true }) options!: SwiperOptions;
+  @Input({ required: true }) swiperClass!: string;
 
   private swiper!: Swiper;
 
@@ -21,7 +21,7 @@ export class SwiperComponents implements AfterViewInit, OnDestroy {
       modules: [Pagination],
       slidesPerView: 'auto',
       ...this.options,
-    })
+    });
   }
 
   ngOnDestroy(): void {
@@ -29,5 +29,4 @@ export class SwiperComponents implements AfterViewInit, OnDestroy {
       this.swiper.destroy();
     }
   }
-
 }

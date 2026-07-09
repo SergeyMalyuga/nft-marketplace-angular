@@ -5,7 +5,7 @@
     <app-swiper [options]="TREND_COLLECTION_SWIPER" swiperClass="swiper-trend">
       @for (card of TREND_CARDS; track card.id) {
         <div class="swiper-slide trend-collection__slide">
-          <app-trend-card class="trend-collection__card" [card]="card"/>
+          <app-trend-card class="trend-collection__card" [card]="card" />
         </div>
       }
     </app-swiper>

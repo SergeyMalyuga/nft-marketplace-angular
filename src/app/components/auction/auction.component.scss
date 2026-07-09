@@ -8,14 +8,14 @@
     padding-top: 360px;
     padding-bottom: 60px;
     position: relative;
-    background-image: url("/assets/images/raster/auction-bg.jpg");
+    background-image: url('/assets/images/raster/auction-bg.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     z-index: 1;
 
     &::before {
-      content: "";
+      content: '';
       position: absolute;
       display: block;
       inset: 0;
@@ -71,17 +71,17 @@
     color: variables.$text-accent-dark;
 
     &::before {
-      content: "";
+      content: '';
       display: block;
       width: 20px;
       height: 20px;
-      background-image: url("/assets/images/vector/eye.svg");
+      background-image: url('/assets/images/vector/eye.svg');
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
     }
 
-    order: 4
+    order: 4;
   }
 
   &__wrapper {

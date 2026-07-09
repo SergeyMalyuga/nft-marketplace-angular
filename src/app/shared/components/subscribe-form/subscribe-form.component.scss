@@ -2,10 +2,10 @@
 @use '../../../../styles/mixins/button' as mixins;
 
 .subscribe-form {
-    display: flex;
-    background-color: variables.$white;
-    border-radius: 20px;
-    justify-content: space-between;
+  display: flex;
+  background-color: variables.$white;
+  border-radius: 20px;
+  justify-content: space-between;
 
   &__button {
     @include mixins.button-base($width: 211px);
@@ -32,7 +32,7 @@
       display: block;
       width: 20px;
       height: 20px;
-      background-image: url("/assets/images/vector/email.svg");
+      background-image: url('/assets/images/vector/email.svg');
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
@@ -72,9 +72,9 @@
     }
   }
 
-    @media (width <= 1280px) {
-      flex-direction: column;
-      background-color: transparent;
-      gap: 16px;
-    }
+  @media (width <= 1280px) {
+    flex-direction: column;
+    background-color: transparent;
+    gap: 16px;
+  }
 }

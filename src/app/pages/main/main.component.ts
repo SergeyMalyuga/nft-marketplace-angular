@@ -1,14 +1,14 @@
-import {ChangeDetectionStrategy, Component} from '@angular/core';
-import {HeaderComponents} from '../../shared/components/header/header.components';
-import {HeroComponent} from '../../components/hero/hero.component';
-import {TrendCollectionComponent} from '../../components/trend-collection/trend-collection.component';
-import {TopCreatorsComponent} from '../../components/top-creators/top-creators.component';
-import {CategoriesComponent} from '../../components/categories/categories.component';
-import {MoreNftsComponent} from '../../components/more-nfts/more-nfts.component';
-import {AuctionComponent} from '../../components/auction/auction.component';
-import {AboutComponent} from '../../components/about/about.component';
-import {Subscribe} from '../../components/subscribe/subscribe';
-import {FooterComponent} from '../../shared/components/footer/footer.component';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { HeaderComponents } from '../../shared/components/header/header.components';
+import { HeroComponent } from '../../components/hero/hero.component';
+import { TrendCollectionComponent } from '../../components/trend-collection/trend-collection.component';
+import { TopCreatorsComponent } from '../../components/top-creators/top-creators.component';
+import { CategoriesComponent } from '../../components/categories/categories.component';
+import { MoreNftsComponent } from '../../components/more-nfts/more-nfts.component';
+import { AuctionComponent } from '../../components/auction/auction.component';
+import { AboutComponent } from '../../components/about/about.component';
+import { Subscribe } from '../../components/subscribe/subscribe';
+import { FooterComponent } from '../../shared/components/footer/footer.component';
 
 @Component({
   selector: 'app-main',
@@ -22,11 +22,10 @@ import {FooterComponent} from '../../shared/components/footer/footer.component';
     AuctionComponent,
     AboutComponent,
     Subscribe,
-    FooterComponent
+    FooterComponent,
   ],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class MainComponent {
-}
+export class MainComponent {}

@@ -1,4 +1,4 @@
-import {SwiperOptions} from 'swiper/types';
+import { SwiperOptions } from 'swiper/types';
 
 export const DEFAULT_COLLECTION_SWIPER = {
   spaceBetween: 30,
@@ -7,7 +7,7 @@ export const DEFAULT_COLLECTION_SWIPER = {
   speed: 600,
   pagination: {
     el: '.swiper-pagination',
-    clickable: true
+    clickable: true,
   },
   breakpoints: {
     0: {
@@ -16,9 +16,9 @@ export const DEFAULT_COLLECTION_SWIPER = {
       centeredSlides: false,
     },
     600: {
-      slidesPerView: "auto",
+      slidesPerView: 'auto',
       initialSlide: 1,
       centeredSlides: true,
-    }
-  }
-} as SwiperOptions
+    },
+  },
+} as SwiperOptions;
