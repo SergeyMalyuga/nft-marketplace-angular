@@ -43,6 +43,8 @@ $wallet-border-color: $violet;
 /* button */
 $button-main: $white;
 $button-bg: $violet;
+$button-bg-hover: color.scale($violet, $blackness: 25%);
+$button-bg-active: color.scale($violet, $blackness: 35%);
 $button-border-color: $violet;
 
 /* button-filter */
